@@ -32,7 +32,7 @@
                         <p class="copyright text-muted">
                             Foto: <a href="https://pixabay.com/de/eichh%C3%B6rnchen-f%C3%BCttern-futter-nuss-2781394/">Annawadl (Pixabay/CC0)</a>, Theme: <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> (MIT License)</a>
                             <br> Disclaimer: Auf dieser Webseite findet keine Rechtsberatung statt, es wird keine Haftung für Folgen der Nutzung der Werkzeuge übernommen.
-                            <br><a href="<?php echo url('datenschutz');?>">Datenschutzerklärung</a> | <a href="<?php echo url('impressum');?>">Impressum</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt</a>
+                            <br><a href="<?php echo url('impressum');?>">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt</a>
                         </p>
                     </div>
                 </div>
