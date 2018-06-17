@@ -335,7 +335,7 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        <img src="<?php echo url('assets/plugins/oerhoernchen/img/squirrel_pixabay_cocoparisienne_250497_cc0.jpg'); ?>" class="rounded float-right" style="max-width:120px;margin-left:5px;" role="presentation" />Hi! Dies ist die Vorschau auf den aktuellen Entwicklungsstand des OERhörnchens. Diese Version ist noch nicht vollständig getestet und kann noch Fehler enthalten (bitte <a href="https://github.com/programmieraffe/oer-hoernchen/issues">hier</a> melden - danke!). Die offizielle und getestete Version findet sich stets hier:
+                        Hi! Dies ist die Vorschau auf den aktuellen Entwicklungsstand des OERhörnchens. Diese Version ist noch nicht vollständig getestet und kann noch Fehler enthalten (bitte <a href="https://github.com/programmieraffe/oer-hoernchen/issues">hier</a> melden - danke!). Die offizielle und getestete Version findet sich stets hier:
                         <br><a href="https://oerhoernchen.de">www.oerhoernchen.de</a>.</p>
                     <!-- <p data-i18n="[html]modal-text-feedback">Feedback oder Fragen? Sehr gerne <a href="https://matthias-andrasch.de/kontakt" target="_blank"> bei mir melden</a>!-->
                     </p>
