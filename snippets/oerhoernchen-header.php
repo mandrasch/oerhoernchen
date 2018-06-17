@@ -8,6 +8,25 @@
   <title><?php echo $site->title()->html(); ?> | <?php echo $page->title()->html(); ?></title>
   <meta name="description" content="<?= $site->description()->html() ?>">
 
+  <!-- Beginn der OpenGraph Tags für Facebook & Co. -->
+    <meta name="DC.Title" content="<?php echo html($page->title()) ?>" />
+    <meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Description" content="<?php echo html($page->description()) ?>"/ >
+    <meta name="DC.Language" content="de_DE" />
+    <meta property="og:title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo html($site->url()) ?>" />
+    <meta property="og:image" content="<?php echo url('assets/plugins/oerhoernchen/img/squirrel_pixabay_cocoparisienne_250497_cc0.jpg'); ?>" />
+    <meta property="og:description" content="<?php echo html($page->description()) ?>" />
+    <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
+    <meta itemprop="description" content="<?php echo html($page->description()) ?>">
+    <!-- Bei Bedarf folgende Favicons als Basis -->
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="<?php echo url('/assets/plugins/oerhoernchen/img/favicon.ico') ?>" />
+    
+
   <?php echo css(array('assets/plugins/oerhoernchen/css/bootstrap.min.css',
       'assets/plugins/oerhoernchen/css/font-awesome/css/font-awesome.min.css',
       'assets/plugins/oerhoernchen/css/clean-blog.min.css',
