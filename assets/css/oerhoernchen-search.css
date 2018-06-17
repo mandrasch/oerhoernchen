@@ -1,0 +1,159 @@
+
+
+
+
+
+.container{
+	max-width:750px;
+}
+
+.header{
+	/* https://pixabay.com/de/eichh%C3%B6rnchen-winter-schnee-apfel-619966/ */
+	background: url('../img/squirrel-619966_1920_cc0_oldiefan.jpg') no-repeat center center scroll;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* adjust to current image */
+header .landing-form-container{
+	padding-top:60px;
+}
+
+.header h1{
+	display:none;
+	/*background-color:rgba(255, 255, 255, 0.5);*/
+}
+
+section {
+    padding: 50px 0 10px 0;
+}
+
+h4{
+	padding:10px 0 5px 0;
+}
+
+
+/* collapsible cards
+Thanks to https://disjfa.github.io/bootstrap-tricks/card-collapse-tricks/ */
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header.toggled .fa.toggle-icon  {
+  transform: rotate(180deg);
+}
+
+
+/* check box styles */
+/* see: https://codepen.io/kosukehorai/pen/pRwKjg */
+
+.nopad {
+	/*padding-left: 0 !important;
+	padding-right: 0 !important;*/
+	margin-bottom: 15px;
+}
+/*image gallery*/
+.image-checkbox {
+	cursor: pointer;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 3px solid transparent;
+	margin-bottom: 0;
+	outline: 0;
+}
+.image-checkbox input[type="checkbox"] {
+	display: none;
+}
+
+.image-checkbox-checked {
+	border-color: #4783B0;
+}
+.image-checkbox .fa {
+  position: absolute;
+  color: #4A79A3;
+  background-color: #fff;
+  padding: 5px;
+  top: 0;
+  right: 15px;
+}
+.image-checkbox-checked .fa {
+  display: block !important;
+}
+
+/* own additions */
+/* migrate to bootstrap 4 - other class? */
+i.hidden{
+	display:none;
+}
+.btn:hover{
+  cursor:pointer;
+}
+/*#search-filter */
+.card{
+  margin-bottom:15px;
+}
+#search-filter div.container{
+	max-width:750px;
+}
+
+#landing-form div.input-group {
+	max-width:75%;
+	margin: 30px auto;
+}
+.select-all{
+	margin-top:10px;
+}
+
+#not-compatible-provider-list .image-checkbox{
+	border:0;
+}
+#not-compatible-provider-list .image-checkbox-checked .fa{
+	display:none !important;
+}
+
+#search-filter-intro {
+	font-style: italic;
+}
+
+footer h4 {
+	font-weight: bold;
+}
+
+.icon-small {
+	height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.icon-medium {
+	height: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+#language-switch {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+#modal-text-feedback {
+    margin-top: 15px;
+}
+
+#github-info{
+	max-width:75%;
+	display:none;
+	margin:0 auto;
+}
+
+.cookiebanner{
+	    background-color: #343a40 !important;
+}
+
+small{
+	line-height: 1.2 !important;
+}

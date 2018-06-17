@@ -1,0 +1,8 @@
+{
+  "name": "oerhoernchen",
+  "description": "The search tool for Open Educational Resources",
+  "author": "Matthias Andrasch <info@pmatthias-andrasch.de>",
+  "version": "1.0.0",
+  "type": "kirby-plugin",
+  "license": "CC0/Public Domain"
+}
