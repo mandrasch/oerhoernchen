@@ -18,7 +18,7 @@
     <meta property="og:title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo html($site->url()) ?>" />
-    <meta property="og:image" content="<?php echo url('assets/plugins/oerhoernchen/img/squirrel_pixabay_cocoparisienne_250497_cc0.jpg'); ?>" />
+    <meta property="og:image" content="<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>" />
     <meta property="og:description" content="<?php echo html($page->description()) ?>" />
     <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
     <meta itemprop="description" content="<?php echo html($page->description()) ?>">
