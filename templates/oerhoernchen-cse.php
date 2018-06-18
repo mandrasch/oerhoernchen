@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Profisuche (BETA)</h1>
-                    <span class="subheading">Mit der Google Custom Search Engine mehrere hundert Seiten durchsuchen.</span>
+                    <h1>CSE-Suche</h1>
+                    <span class="subheading">Mit der Google Custom Search Engine (CSE) mehrere hundert Seiten nach freien Inhalten durchsuchen.</span>
                 </div>
             </div>
         </div>
@@ -120,7 +120,7 @@
         var OERHOERNCHEN_ASSET_IMG_URL = '<?php echo $kirby->urls()->assets().'/plugins/oerhoernchen/img/'; ?>';
     </script>
     <?php echo js(array(
-        'assets/plugins/oerhoernchen/js/oerhoernchen-profisearch.js'
+        'assets/plugins/oerhoernchen/js/oerhoernchen-cse.js'
     )); ?>
 
 <?php snippet('oerhoernchen-footer') ?>

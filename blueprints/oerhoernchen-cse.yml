@@ -1,4 +1,4 @@
-title: OERhörnchen Page
+title: OERhörnchen CSE
 
 fields:
   title:
@@ -6,7 +6,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  simplemde
+    type:  textarea
   description:
-    label: description
+    label: Description
     type: text

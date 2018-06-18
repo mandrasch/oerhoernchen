@@ -2,12 +2,12 @@
 
 // standard search
 $kirby->set('template','oerhoernchen-search',__DIR__ . '/templates/oerhoernchen-search.php');
-$kirby->set('template','oerhoernchen-profisearch',__DIR__ . '/templates/oerhoernchen-profisearch.php');
+$kirby->set('template','oerhoernchen-cse',__DIR__ . '/templates/oerhoernchen-cse.php');
 $kirby->set('template','oerhoernchen-bildungsteiler',__DIR__ . '/templates/oerhoernchen-bildungsteiler.php');
 $kirby->set('template','oerhoernchen-page',__DIR__ . '/templates/oerhoernchen-page.php');
 // always create blueprint for template, otherwise it won't show up
 $kirby->set('blueprint', 'oerhoernchen-search', __DIR__ . '/blueprints/oerhoernchen-search.yml');
-$kirby->set('blueprint', 'oerhoernchen-profisearch', __DIR__ . '/blueprints/oerhoernchen-profisearch.yml');
+$kirby->set('blueprint', 'oerhoernchen-cse', __DIR__ . '/blueprints/oerhoernchen-cse.yml');
 $kirby->set('blueprint', 'oerhoernchen-bildungsteiler', __DIR__ . '/blueprints/oerhoernchen-bildungsteiler.yml');
 $kirby->set('blueprint', 'oerhoernchen-page', __DIR__ . '/blueprints/oerhoernchen-page.yml');
 // snippets for templates
