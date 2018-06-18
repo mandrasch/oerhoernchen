@@ -247,3 +247,19 @@ $items = $pages->visible();
             </div>
         </div>
     </nav>
+
+
+    <?php //2DO: use blueprint image field to select different image for each page or default one ?>
+    <header class="masthead" style="background-image: url('<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1><?php echo $page->heading()->html(); ?></h1> 
+                        <span class="subheading"><?php echo html($page->subheading()); ?></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

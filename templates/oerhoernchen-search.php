@@ -1,20 +1,5 @@
 <?php snippet('oerhoernchen-header') ?>
 
-<?php //2DO: put in header with var for image ?>
-<header class="masthead" style="background-image: url('<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>OERhörnchen</h1> 
-                    <span class="subheading" style="display:none;">Legal veränderbares Lernmaterial für einen zeitgemäßen Unterrichten finden.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
 <div class="row" style="display:none;">
     <div class="col-lg-8 col-md-10 mx-auto">
              <p class="explanation text-center">Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen gefunden werden, welche frei veränderbar sind und wieder veröffentlicht werden dürfen - sogenannte <a href="https://oerlabs.de/oer/was-sind-oer/" target="_blank">Open Educational Resources (OER)</a>.

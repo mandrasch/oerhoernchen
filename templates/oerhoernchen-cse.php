@@ -1,19 +1,4 @@
 <?php snippet('oerhoernchen-header') ?>
-
-<header class="masthead" style="background-image: url('<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>CSE-Suche</h1>
-                    <span class="subheading">Mit der Google Custom Search Engine (CSE) mehrere hundert Seiten nach freien Inhalten durchsuchen.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
   <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p><small><span class="badge badge-warning">Beta-Version</span> Mit dem Klick auf „Suchen“ wird eine Serververbindung zur Google Cloud aufgebaut und der Suchbegriff sowie die weiteren Einstellungen übermittelt. Hintergrundinformationen: <a href="https://kurzelinks.de/mtyz" targe="_blank">OERhörnchen Profisuche (Google Drive Präsentation)</a>.</small></p>

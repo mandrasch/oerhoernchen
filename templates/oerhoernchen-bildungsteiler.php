@@ -1,21 +1,5 @@
 <?php snippet('oerhoernchen-header') ?>
 
-<?php //2DO: put in header with var for image ?>
-<header class="masthead" style="background-image: url('<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>Bildungsteiler</h1> 
-                    <!--<span class="subheading" style="display:none;">Legal veränderbares Lernmaterial für einen zeitgemäßen Unterrichten finden.</span>-->
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-
 <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                  <p style="line-height:1.2" class="text-center"><small><i>Neu: Du möchtest Inhalte wie Fotos von anderen Personen in deinem Werk einbinden? Nutze die <b><a href="http://kurzelinks.de/x7ir" target="_blank">Automagische „TULLU+V“-Tabelle</a></b> (Google Drive), um die verwendeten Werke rechtssicher zu dokumentieren.</i></small></p> 

@@ -4,10 +4,16 @@ fields:
   title:
     label: Title
     type:  text
-
+  heading:
+    label: Heading
+    type: text
+    default: "Bildungsteiler"
+  subheading:
+    label: Subheading
+    type: text
   text:
     label: Text
     type:  textarea
   description:
-    label: Description
-    type: text
+    label: "Description (SEO)"
+    type: textarea
