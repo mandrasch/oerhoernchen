@@ -241,7 +241,14 @@ $items = $pages->visible();
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
     <?php foreach($items as $item): ?>
-    <li class="nav-item"><a<?php e($item->isOpen(), ' class="nav-link active"', ' class="nav-link"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a></li>
+    <li class="nav-item"><a<?php e($item->isOpen(), ' class="nav-link active"', ' class="nav-link"') ?> href="<?= $item->url() ?>">
+      <?php if($item->menu_title()->empty()){
+        echo $item->title()->html();
+      }
+      else{
+        echo $item->menu_title()->html();
+      }
+      ?></a></li>
     <?php endforeach ?>
                 </ul>
             </div>
@@ -263,3 +270,4 @@ $items = $pages->visible();
             </div>
         </div>
     </header>
+

@@ -2,8 +2,14 @@ title: OERhörnchen CSE
 
 fields:
   title:
-    label: Title
+    label: "Title (SEO)"
     type:  text
+  description:
+    label: "Description (SEO)"
+    type: textarea
+  menu_title:
+    label: "Title (menu)"
+    type: text
   heading:
     label: Heading
     type: text
@@ -15,6 +21,3 @@ fields:
   text:
     label: Text
     type:  textarea
-  description:
-    label: Description
-    type: text
