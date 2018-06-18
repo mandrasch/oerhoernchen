@@ -27,18 +27,20 @@ var generateList = function(list, selector) {
       data_providerid = object.id;
     }
 
-    // we need to remove the a tag, because piwik tracks clinks on it as external link
+    // 2DO: if tracking is enabled: we need to remove the a tag, because piwik tracks clinks on it as external link
+    // 2DO: find method to not track the a link in matomo/piwik 
     var html = '<div class="col-xs-6 col-sm-3 col-md-3 nopad text-center">' +
-      //'<a href="https://'+object.url+'">'+
+      '<a href="https://'+object.url+'">'+
       '<label class="image-checkbox" data-providerlist="'+selector+'">' +
-      '<img class="img-fluid" src="'+OERHOERNCHEN_ASSET_IMG_URL+'provider_logos/' + object.image + '" alt="Logo ' + object.name + '" title="' + object.name + '" />' +
+      '<img class="img-fluid" src="'+OERHOERNCHEN_ASSET_IMG_URL+'provider_logos/' + object.image + '" alt="Logo ' + object.name + '" data-toggle="tooltip" data-placement="bottom" title="' + object.name + '" />' +
       '<input type="checkbox" name="image" value="' + object.url + '"  data-title="' + object.name + '"  data-providerid="' + data_providerid + '" checked />' +
       '<i class="fa fa-check hidden"></i>' +
       '</label>' +
-      //'</a>'+
+      '</a>'+
       '</div>';
 
     $(html).appendTo(selector);
+    $('[data-toggle="tooltip"]').tooltip();
   });
 };
 
