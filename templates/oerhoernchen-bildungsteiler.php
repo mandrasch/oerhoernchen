@@ -1,5 +1,7 @@
 <?php snippet('oerhoernchen-header') ?>
 
+<div class="container">
+
 <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                  <p style="line-height:1.2" class="text-center"><small><i>Neu: Du möchtest Inhalte wie Fotos von anderen Personen in deinem Werk einbinden? Nutze die <b><a href="http://kurzelinks.de/x7ir" target="_blank">Automagische „TULLU+V“-Tabelle</a></b> (Google Drive), um die verwendeten Werke rechtssicher zu dokumentieren.</i></small></p> 
@@ -150,6 +152,8 @@
                 </div>
             </div>
         </div>
+
+    </div><!-- eo container -->
         <hr>
         
         <!-- Small modal -->

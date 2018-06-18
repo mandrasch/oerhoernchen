@@ -1,4 +1,5 @@
 <?php snippet('oerhoernchen-header') ?>
+ <div class="container">
   <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p><small><span class="badge badge-warning">Beta-Version</span> Mit dem Klick auf „Suchen“ wird eine Serververbindung zur Google Cloud aufgebaut und der Suchbegriff sowie die weiteren Einstellungen übermittelt. Hintergrundinformationen: <a href="https://kurzelinks.de/mtyz" targe="_blank">OERhörnchen Profisuche (Google Drive Präsentation)</a>.</small></p>
@@ -47,6 +48,10 @@
                 
             </div>
         </div>
+
+
+    </div><!-- eo container -->
+    <hr>
 
 <!-- search link modal -->
     <div class="modal fade" id="search-link-modal">

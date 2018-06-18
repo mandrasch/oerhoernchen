@@ -1,4 +1,5 @@
 <?php snippet('oerhoernchen-header') ?>
+<div class="container">
 
 <div class="row" style="display:none;">
     <div class="col-lg-8 col-md-10 mx-auto">
@@ -257,6 +258,8 @@
     </div>-->
 
 
+</div><!-- eo container -->
+<hr>
 
     <!-- search link modal -->
     <div class="modal fade" id="search-link-modal">
