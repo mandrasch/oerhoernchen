@@ -1,30 +1,35 @@
 // 2DO: use name space, ignore this file (and images) in repo for forks
-var oer_provider_list = [{
-  'name': 'SEGU Geschichte',
+var oer_provider_list = [
+ {
+  'name': 'KindOERgarten.de – Freies Material für das Kindergartenalter',
+  'url': 'kindoergarten.de',
+  'image': 'kindoergarten.png'
+},{
+  'name': 'IDeRblog: Übungsdatenbank für Rechtschreibung für Kinder - Landesinstitut für Pädagogik und Medien, Saarland',
+  'url': 'typo3.lpm.uni-sb.de/iderblog/fuer-erwachsene/uebungsdatenbank-online/',
+  'image': 'iderblog.png'
+},{
+  'name': 'SEGU Geschichte - Projekt von Dr. Christoph Pallaske',
   'url': 'segu-geschichte.de',
   'image': 'segu_geschichte.jpg'
 }, {
-  'name': 'Serlo',
+  'name': 'Serlo - Die freie Lernplattform. Serlo Education e.V.',
   'url': 'de.serlo.org',
   'image': 'serlo.png'
 }, {
-  'name': 'Memucho',
+  'name': 'Memucho - Schneller lernen, länger wissen.',
   'url': 'memucho.de',
   'image': 'memucho.png'
 }, {
-  'name': 'Medien in die Schule',
+  'name': 'Medien in die Schule (Medienpädagogik) - FSM, FSF, Google',
   'url': 'medien-in-die-schule.de',
   'image': 'medien-in-die-schule.jpg'
 }, {
-  'name': 'ZUM',
+  'name': 'Zentrale für Unterrichtsmedien e.V.',
   'url': 'zum.de',
   'image': 'zum.jpg'
 }, {
-  'name': 'Wikiversity',
-  'url': 'de.wikiversity.org',
-  'image': 'wikiversity.png'
-}, {
-  'name': 'EDUdigitalLE',
+  'name': 'EDUdigitalLE - Unterrichtsmaterial von Studierenden der Universität Leipzig',
   'url': 'oer.uni-leipzig.de',
   'image': 'edudigitalle.png'
 }, {
@@ -36,34 +41,30 @@ var oer_provider_list = [{
   'url': 'offene-naturfuehrer.de',
   'image': 'offene_naturfuehrer.png'
 }, {
-  'name': 'KindOERgarten',
-  'url': 'kindoergarten.de',
-  'image': 'kindoergarten.png'
-}, {
-  'name': 'teachSam',
+  'name': 'teachSam - Bildungsserver für Schülerinnen und Schüler, Studierende und Lehrkräfte.',
   'url': 'teachsam.de',
   'image': 'teachsam.png'
-}, {
-  'name': 'IDeRblog - Übungsdatenbank',
-  'url': 'typo3.lpm.uni-sb.de/iderblog/fuer-erwachsene/uebungsdatenbank-online/',
-  'image': 'iderblog.png'
-}, {
+},  {
   'name': 'ChiLe - Chemie interaktiv lernen',
   'url': 'chemieunterricht-interaktiv.de',
   'image': 'chile.png'
 }, {
-  'name': 'Ö1 macht Schule',
+  'name': 'Ö1 macht Schule - Gemeinschaftsprojekt von Radio Österreich 1 (Ö1), BMBWF und der PH Wien.',
   'url': 'oe1macht.schule',
   'image': 'oe1machtschule.png'
 },{
-  'name':'Edulabs Bildung in der digitalen Welt',
+  'name':'Edulabs Bildung in der digitalen Welt - Open Knowledge Foundation Deutschland e.V.',
   'url':'edulabs.de/oer/',
   'image':'edulabs.png'
 },{
-  'name':'Digitale Spielewelten (Medienpädagogik)',
+  'name':'Digitale Spielewelten (Medienpädagogik) - Projekt von Spielraum TH Köln, Stiftung Digitale Spielekultur',
   'url':'digitale-spielewelten.de',
   'image':'digitale_spielewelten.png'
-}];
+},{
+  'name': 'Wikiversity - Wikimedia Foundation',
+  'url': 'de.wikiversity.org',
+  'image': 'wikiversity.png'
+},];
 
 var mixed_provider_list =
   [{
@@ -71,10 +72,14 @@ var mixed_provider_list =
     'url': 'bpb.de',
     'image': 'bpb.jpg'
   }, {
-    'name': 'iMooX',
+    'name': 'iMooX - Plattform für offene Online-Kurse (MOOCs)',
     'url': 'imoox.at',
     'image': 'imoox.png'
   }, {
+    'name': 'oncampus - offene Online Kurse',
+    'url': 'mooin.oncampus.de',
+    'image': 'mooin.png'
+  },{
     'name': 'Lecture2Go Universität Hamburg',
     'url': 'lecture2go.uni-hamburg.de',
     'image': 'lecture2go.png'
@@ -86,10 +91,6 @@ var mixed_provider_list =
     'name': 'Medienportal Siemens Stiftung',
     'url': 'medienportal.siemens-stiftung.org',
     'image': 'siemens_stiftung.png'
-  }, {
-    'name': 'MOOIN',
-    'url': 'mooin.oncampus.de',
-    'image': 'mooin.png'
   }, {
     'name': 'openlearnware - TU Darmstadt',
     'url': 'openlearnware.de',
