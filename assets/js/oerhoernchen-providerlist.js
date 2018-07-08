@@ -24,7 +24,8 @@ var oer_provider_list = [
   'name': 'Medien in die Schule (Medienpädagogik) - FSM, FSF, Google',
   'url': 'medien-in-die-schule.de',
   'image': 'medien-in-die-schule.jpg'
-}, {
+},
+{
   'name': 'Zentrale für Unterrichtsmedien e.V.',
   'url': 'zum.de',
   'image': 'zum.jpg'
@@ -40,7 +41,12 @@ var oer_provider_list = [
   'name': 'Offene Naturführer',
   'url': 'offene-naturfuehrer.de',
   'image': 'offene_naturfuehrer.png'
-}, {
+},
+{
+  'name':'Umwelt im Unterricht - Bundesministerium für Umwelt, Naturschutz und nukleare Sicherheit',
+  'url':'umwelt-im-unterricht.de',
+  'image':'umwelt_im_unterricht.png'
+},{
   'name': 'teachSam - Bildungsserver für Schülerinnen und Schüler, Studierende und Lehrkräfte.',
   'url': 'teachsam.de',
   'image': 'teachsam.png'
@@ -112,15 +118,9 @@ var mixed_provider_list =
 
 var media_provider_list = [
   /* edu */
-  {
-    'id': 'khanacademy',
-    'name': 'Khanacademy - Interaktive Lerninhalte unter CC BY-NC-SA',
-    'url': 'de.khanacademy.org/',
-    'image': 'khanacademy.png'
-  },
 
 
-  /* photos */
+  /* photos / graphics */
   {
     'id': 'pixabay',
     'name': 'Pixabay - Fotos/Bilder unter CC0-Lizenz',
@@ -143,6 +143,18 @@ var media_provider_list = [
     'name': 'Wikimedia Commons - Bilder, Videos und andere Medieninhalte',
     'url': 'commons.wikimedia.org',
     'image': 'wikimedia_commons.png'
+  },
+  {
+    'id': 'openclipart',
+    'name': 'Open Clipart - Grafiken / Icons unter CC0/Public Domain',
+    'url': 'openclipart.org',
+    'image': 'openclipart.png'
+  },
+  {
+    'id': 'nounproject',
+    'name': 'Nounproject - Freie Grafiken / Icons unter CC BY (oder CC0/Public Domain) Lizenz',
+    'url': 'thenounproject.com',
+    'image': 'nounproject.png'
   },
   /* cultural heritage */
   {
@@ -177,6 +189,12 @@ var media_provider_list = [
     'url': 'pixabay.de',
     'image': 'pixabay_video.png'
   },
+  {
+    'id': 'khanacademy',
+    'name': 'Khanacademy - Interaktive Lerninhalte unter CC BY-NC-SA',
+    'url': 'de.khanacademy.org/',
+    'image': 'khanacademy.png'
+  },
   /* 2DO: vimeo! */
   /*{
 
@@ -194,20 +212,57 @@ var media_provider_list = [
     'url':'freesound.org',
     'image':'freesound.png'
   },
+  {
+    'id':'incompetech',
+    'name':'incompetech.com - Songs unter freier Lizenz',
+    'url':'incompetech.com',
+    'image':'incompetech.png'
+  },
+  {
+    'id':'soundcloud',
+    'name':'Soundcloud - Musikplattform',
+    'url':'soundcloud.com',
+    'image':'soundcloud.png'
+  },
+  {
+    'id':'digccmixter',
+    'name':'dig.ccmixter.org - Songs unter freier CC-BY-Lizenz (oder CC BY NC und CCplus)',
+    'url':'dig.ccmixter.org',
+    'image':'digccmixter.png'
+  },
   /* others */
+  {
+    'id':'medienpaedagogikpraxisblog',
+    'name':'Medienpädagogik Praxisblog - Inspiration und Anleitungen unter freier Lizenz',
+    'url':'medienpaedagogik-praxis.de',
+    'image':'medienpaedagogik_praxisblog.png'
+  },
+   {
+    'id':'medienistik',
+    'name':'Medienistik - Innovative Unterrichtsmaterialien fürs digitale Zeitalter',
+    'url':'medienistik.wordpress.com',
+    'image':'medienistik.png'
+  },
   {
     'id': 'edutags',
     'name': 'Edutags - Social Bookmarking für Lehr- und Lernmaterial',
     'url': 'edutags.de',
     'image': 'edutags.png'
+  },
+  {
+    'id':'wbweb',
+    'name':'wb-web: Professionalitätsentwicklung von Lehrenden in der Erwachsenen- und Weiterbildung (CC BY SA)',
+    'url':'wb-web.de',
+    'image':'wb-web.png'
   }
+  /* 2DO: slideshare --> not possible to filter by license? */
 ]
 
 var not_compatible_provider_list =
   [
   {
     'id':'turtlestich',
-    'name':'TurtleStitch - Kinder können mit WebApp Programme für Stickmaschinen schreiben',
+    'name':'TurtleStitch (OER-Projekt): Kinder können mit WebApp Programme für Stickmaschinen schreiben',
     'url':'turtlestitch.org',
     'image':'turtlestitch.png'
   },
@@ -226,5 +281,15 @@ var not_compatible_provider_list =
     'name': 'Learnline NRW - Repository für Unterrichtsmaterial NRW',
     'url': 'learnline.schulministerium.nrw.de',
     'image': 'learnline.png'
+  },
+  {
+    'name':'search.creativecommons.org - Vorbild des OERhörnchens',
+    'url':'search.creativecommons.org',
+    'image':'ccsearch.png'
+  },
+  {
+    'name':'CC search beta - zweite Version der CC Suche (Betaversion)',
+    'url':'ccsearch.creativecommons.org',
+    'image':'ccsearch_beta.png'
   }
 ]

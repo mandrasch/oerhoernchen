@@ -122,7 +122,7 @@
                 <div id="provider-list-box">
                     <div class="card">
                         <div class="card-header">
-                            Medienplattformen und Portale
+                            Medienplattformen, Portale und Blogs
                         </div>
                         <div class="card-body">
                             <p style="display:none"><small><i>Hinweis: Einige Plattformen unterstützen die Lizenzfilterung nicht in vollem Umfang - die Suche nach OER-kompatiblen Lizenzen funktioniert aber auf allen aufgeführten Seiten. Mehrfachauswahl ist möglich:</i></small></p>
@@ -139,6 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 select-all" style="display:none;" id="media-search-select-buttons">
+                                    <a href="https://www.youtube.com/watch?v=euTFZ-lEDTo" target="_blank">Videoanleitung</a> <br />
                                     <button class="btn btn-sm btn-secondary oer-squirrel-select-all-button"><i class="fa fa-check-square-o" aria-hidden="true"></i> Alle auswählen</button>
                                     <button class="btn btn-sm btn-secondary oer-squirrel-deselect-all-button"><i class="fa fa-square-o" aria-hidden="true"></i> Alle abwählen</button>
                                 </div>
@@ -251,6 +252,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <p class="text-center">Viele Webseiten stammen aus der <a href="https://www.was-ist-oer.de/oer-finden-anlaufstellen-fuer-freie-materialien/" target="_blank">Mega-Liste</a> des großartigen Werks <a href="https://www.was-ist-oer.de/buch/" target="_blank">Das OER-Buch: Freie Unterrichtsmaterialien finden, rechtssicher einsetzen, selbst machen und teilen</a> (Beltz Verlag, CC BY SA 4.0) von Jöran Muuß-Merholz.</p>
                 </div>
             </div>
     </div>

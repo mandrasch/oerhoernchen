@@ -1,9 +1,12 @@
-/* only used for license filter box?
-
+/* link styles */
 .row a{
 	text-decoration: underline;
 }
-*/
+
+.license-filter-box .card-header a{
+	text-decoration: none;
+}
+
 
 /* heading too big for long words */
 

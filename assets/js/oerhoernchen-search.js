@@ -11,8 +11,11 @@ var subheadingSentences = [
   "Offenes Lehr/Lernmaterial finden, was legal verändert werden kann.",
   "Offenes Lehr/Lernmaterial finden, anpassen und legal teilen.",
   "Veränderbares Unterrichtsmaterial finden und legal mit Kolleg*innen in der ganzen Welt teilen.",
-  "#zeitgemäßeBildung? Geht legal nur mit OER!",
-  "Sei ein OERhörnchen - teile gutes Material mit Kolleg*innen im Web!"
+  "#zeitgemäßeBildung? Geht einfach & legal nur mit OER!",
+  "Sei ein OERhörnchen - teile gutes Material mit Kolleg*innen im Web!",
+  "Kooperation? Mit OER deutlich einfacher!",
+  "Freies Material finden, eigene Projekt umsetzen.",
+  "OER für Profs? Schaut mal bei OERinForm vorbei!"
 ];
 var randomSubheadingSentence = subheadingSentences[Math.floor(Math.random()*subheadingSentences.length)];
 $("span.subheading:first").html(randomSubheadingSentence).fadeIn();
@@ -314,6 +317,60 @@ var performSearch = function(type) {
           new_url = 'https://freesound.org/search/?q=' + q_encoded;
           break;
 
+        case 'medienpaedagogikpraxisblog':
+            new_url = 'https://www.medienpaedagogik-praxis.de/?s=' + q_encoded;
+          break;
+
+        case 'openclipart':
+          new_url = 'https://openclipart.org/search/?query=' + q_encoded;
+          break;
+        case 'nounproject':
+          new_url = 'https://thenounproject.com/search/?q=' + q_encoded;
+          break;
+        // 2DO: not possible to set search query via GET?
+        case 'incompetech':
+          new_url = 'https://incompetech.com/music/royalty-free/music.html';
+          break;
+        case 'digccmixter':
+          switch (license_filter_val) {
+            case 'only-oer':
+              url_license_filter = 'lic=open';
+              break;
+            case 'nc':
+              url_license_filter = '';
+              break;
+            case 'nc-nd':
+              url_license_filter = '';
+              break;
+            case 'no-filter':
+              url_license_filter = '';
+              break;
+          }
+          new_url = "http://dig.ccmixter.org/search?&searchp=" + q_encoded + '&' + url_license_filter;
+          break;
+        case 'wbweb':
+          new_url = 'https://wb-web.de/suche.html?search=' + q_encoded;
+          break;
+        case 'soundcloud':
+          switch (license_filter_val) {
+            case 'only-oer':
+              url_license_filter = 'filter.license=to_modify_commercially';
+              break;
+            case 'nc':
+              url_license_filter = 'filter.license=to_share'; // 2DO: can be NC as well?!
+              break;
+            case 'nc-nd':
+              url_license_filter = 'filter.license=to_share';
+              break;
+            case 'no-filter':
+              url_license_filter = '';
+              break;
+          }
+            new_url = 'https://soundcloud.com/search/sounds?q=' + q_encoded + '&' + url_license_filter;
+            break;
+          case 'medienistik':
+            new_url = 'https://medienistik.wordpress.com/?s=' + q_encoded;
+            break;
       } // eo switch/case
 
       if (new_url !== '') {
