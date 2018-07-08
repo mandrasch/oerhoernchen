@@ -52,7 +52,7 @@ var generateListNotCompatible = function(list, selector) {
 
     var html = '<div class="col-xs-6 col-sm-3 col-md-3 nopad text-center">' +
       '<a href="https://' + object.url + '" target="_blank">' +
-      '<img class="img-fluid" src="provider_logos/' + object.image + '" alt="Logo ' + object.name + '" title="' + object.name + '" />' +
+      '<img class="img-fluid" src="'+OERHOERNCHEN_ASSET_IMG_URL+'provider_logos/' + object.image + '" alt="Logo ' + object.name + '" title="' + object.name + '" />' +
       '</a>' +
       '</div>';
 
@@ -192,6 +192,11 @@ var performSearch = function(type) {
       var url_license_filter = '';
 
       switch (provider_id) {
+        // khanacademy does not support filter by licenses
+        case 'khanacademy':
+          new_url = 'https://de.khanacademy.org/search?page_search_query='+ q_encoded ;
+          break;
+
         case 'youtube':
           new_url = 'https://www.youtube.com/results?search_query=' + q_encoded + ',creativecommons';
           break;
@@ -236,6 +241,34 @@ var performSearch = function(type) {
           new_url = 'https://pixabay.com/de/videos/list/?hp=&image_type=video&q=' + q_encoded;
           break;
 
+
+        case 'europeana':
+          switch (license_filter_val) {
+            case 'only-oer':
+              url_license_filter = "+AND+RIGHTS%3A*creative*+AND+NOT+RIGHTS%3A*nc*+AND+NOT+RIGHTS%3A*nd*";
+              break;
+            case 'nc':
+              url_license_filter = "+AND+RIGHTS%3A*creative*+AND+NOT+RIGHTS%3A*nd*";
+              break;
+            case 'nc-nd':
+              url_license_filter = "+AND+RIGHTS%3A*creative*+";
+              break;
+            case 'no-filter':
+              url_license_filter = '';
+              break;
+          }
+
+          new_url = 'https://www.europeana.eu/portal/de/search?q=' + q_encoded + '+' + url_license_filter;
+          break;
+        case 'met':
+          url_license_filter = 'showOnly=openaccess'; // public domain cc0
+          new_url = 'https://www.metmuseum.org/art/collection/search#!?q=' + q_encoded + '&' + url_license_filter;
+          break;
+
+        // 2DO: no license filter avaiblabe - drop mail?
+        case 'rijksmuseum':
+          new_url = 'https://www.rijksmuseum.nl/en/search?q='+ q_encoded;
+          break;
         case 'freemusicarchive':
           switch (license_filter_val) {
             case 'only-oer':

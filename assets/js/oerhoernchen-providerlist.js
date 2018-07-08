@@ -110,14 +110,26 @@ var mixed_provider_list =
   }];
 
 
-var media_provider_list = [{
-    'id': 'youtube',
-    'name': 'YouTube',
-    'url': 'youtube.com',
-    'image': 'youtube.png'
-  }, {
+var media_provider_list = [
+  /* edu */
+  {
+    'id': 'khanacademy',
+    'name': 'Khanacademy - Interaktive Lerninhalte unter CC BY-NC-SA',
+    'url': 'de.khanacademy.org/',
+    'image': 'khanacademy.png'
+  },
+
+
+  /* photos */
+  {
+    'id': 'pixabay',
+    'name': 'Pixabay - Fotos/Bilder unter CC0-Lizenz',
+    'url': 'pixabay.de',
+    'image': 'pixabay.png'
+  },
+  {
     'id': 'flickr',
-    'name': 'flickr',
+    'name': 'flickr - Bilder von Fotograf*innen aus aller Welt',
     'url': 'flickr.com',
     'image': 'flickr.png'
   }, {
@@ -126,38 +138,68 @@ var media_provider_list = [{
     'url': 'google.de/imghp',
     'image': 'google_image_search.png'
   },
-  /*2DO: Audio/Video*/
   {
-    'id': 'pixabay',
-    'name': 'Pixabay (CC0 Fotos/Bilder)',
-    'url': 'pixabay.de',
-    'image': 'pixabay.png'
-  },{
-    'id': 'pixabay-video',
-    'name': 'Pixabay (CC0 Videos)',
-    'url': 'pixabay.de',
-    'image': 'pixabay_video.png'
-  }, {
-    'id': 'freemusicarchive',
-    'name': 'Free Music Archive (FMA)',
-    'url': 'freemusicarchive.com',
-    'image': 'freemusicarchive.png'
-  }, {
     'id': 'wikimediacommons',
-    'name': 'Wikimedia Commons',
+    'name': 'Wikimedia Commons - Bilder, Videos und andere Medieninhalte',
     'url': 'commons.wikimedia.org',
     'image': 'wikimedia_commons.png'
-  }, {
+  },
+  /* cultural heritage */
+  {
+    'id': 'europeana',
+    'name': 'Europeana Collections - Inhalte in europäischen Archiven, Bibliotheken und Museen suchen',
+    'url': 'europeana.eu',
+    'image':'europeana.png'
+  },{
+    'id':'met',
+    'name':'Metropolitan Museum of Art - Zeitgeschichtliche Kunstwerke unter CC0/Public Domain',
+    'url':'metmuseum.org',
+    'image':'met.png'
+  },
+  {
+    'id':'rijksmuseum',
+    'name':'Rijksmuseum Amsterdam Riijksstudio - Kunstwerke unter CC0/Public Domain',
+    'url':'rijksmuseum.nl/en/search',
+    'image':'rijksmuseum.png'
+  },
+
+
+/* video */
+  {
+    'id': 'youtube',
+    'name': 'YouTube',
+    'url': 'youtube.com',
+    'image': 'youtube.png'
+  }, 
+  {
+    'id': 'pixabay-video',
+    'name': 'Pixabay - Videos unter CC0-Lizenz',
+    'url': 'pixabay.de',
+    'image': 'pixabay_video.png'
+  },
+  /* 2DO: vimeo! */
+  /*{
+
+  },*/
+  /*2DO: Audio*/
+  {
+    'id': 'freemusicarchive',
+    'name': 'Free Music Archive (FMA) - Songs unter freier Lizenz',
+    'url': 'freemusicarchive.com',
+    'image': 'freemusicarchive.png'
+  },  
+  {
+    'id':'freesound',
+    'name':'freesound.org - Audioschnipsel, Soundeffekte und Jingles',
+    'url':'freesound.org',
+    'image':'freesound.png'
+  },
+  /* others */
+  {
     'id': 'edutags',
     'name': 'Edutags - Social Bookmarking für Lehr- und Lernmaterial',
     'url': 'edutags.de',
     'image': 'edutags.png'
-  },
-  {
-    'id':'freesound',
-    'name':'freesound.org',
-    'url':'freesound.org',
-    'image':'freesound.png'
   }
 ]
 
