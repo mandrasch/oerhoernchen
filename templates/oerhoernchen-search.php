@@ -239,10 +239,9 @@
                     </button>
                 </div>
     </div><!-- eo web search -->
-    <!--<section id="not-compatible" class="not-compatible">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" id="not-compatible-provider-list-box">
+    <div id="not-compatible" class="row not-compatible"  style="margin-top:30px;" >
+        <div class="col-lg-8 col-md-10 mx-auto">
+                <div id="not-compatible-provider-list-box">
                     <div class="card">
                         <div class="card-header">
                             Weitere Seiten (derzeit nicht nach Lizenzen durchsuchbar via OERhörnchen)
@@ -254,8 +253,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>-->
+    </div>
 
 
 </div><!-- eo container -->
