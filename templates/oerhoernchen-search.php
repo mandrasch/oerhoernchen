@@ -244,7 +244,7 @@
                 <div id="not-compatible-provider-list-box">
                     <div class="card">
                         <div class="card-header">
-                            Weitere Seiten (derzeit nicht nach Lizenzen durchsuchbar via OERhörnchen)
+                            Weitere Seiten
                         </div>
                         <div class="card-body">
                             <div class="row" id="not-compatible-provider-list">
@@ -254,10 +254,8 @@
                 </div>
             </div>
     </div>
-
-
-</div><!-- eo container -->
-<hr>
+    </div><!-- eo container -->
+    <hr>
 
     <!-- search link modal -->
     <div class="modal fade" id="search-link-modal">
