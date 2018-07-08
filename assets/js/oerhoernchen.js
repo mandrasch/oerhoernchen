@@ -10,7 +10,7 @@ if (typeof console === 'undefined') {
 
 $(document).ready(function() {
 
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 
   // toogle action for license filter, dynamic content event
   $("body").on('click',"a.card-body-toggle", function(e){
