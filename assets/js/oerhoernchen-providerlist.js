@@ -204,7 +204,14 @@ var media_provider_list = [
 ]
 
 var not_compatible_provider_list =
-  [{
+  [
+  {
+    'id':'turtlestich',
+    'name':'TurtleStitch - Kinder können mit WebApp Programme für Stickmaschinen schreiben',
+    'url':'turtlestitch.org',
+    'image':'turtlestitch.png'
+  },
+  {
     /* badge image from pixabay: https://pixabay.com/de/abzeichen-flair-englisch-sprache-1093968/ */
     'id': 'mason',
     'name': 'Mason OER Metafinder (Englischssprachige Inhalte)',
@@ -216,7 +223,7 @@ var not_compatible_provider_list =
     'url': 'bildungsserver.de/elixier/',
     'image': 'elixier.png'
   }, {
-    'name': 'Learnline NRW',
+    'name': 'Learnline NRW - Repository für Unterrichtsmaterial NRW',
     'url': 'learnline.schulministerium.nrw.de',
     'image': 'learnline.png'
   }
