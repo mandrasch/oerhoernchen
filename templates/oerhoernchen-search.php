@@ -139,9 +139,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12 select-all" style="display:none;" id="media-search-select-buttons">
-                                    <a href="https://www.youtube.com/watch?v=euTFZ-lEDTo" target="_blank">Videoanleitung</a> <br />
                                     <button class="btn btn-sm btn-secondary oer-squirrel-select-all-button"><i class="fa fa-check-square-o" aria-hidden="true"></i> Alle auswählen</button>
-                                    <button class="btn btn-sm btn-secondary oer-squirrel-deselect-all-button"><i class="fa fa-square-o" aria-hidden="true"></i> Alle abwählen</button>
+                                    <button class="btn btn-sm btn-secondary oer-squirrel-deselect-all-button"><i class="fa fa-square-o" aria-hidden="true"></i> Alle abwählen</button><br>
+                                    <a href="https://www.youtube.com/watch?v=euTFZ-lEDTo" target="_blank">Videoanleitung zur Profisuche</a>
                                 </div>
                             </div>
                         </div>
