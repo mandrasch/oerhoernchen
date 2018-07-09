@@ -244,6 +244,12 @@ var media_provider_list = [
     'image':'medienistik.png'
   },
   {
+    'id':'ebildungslabor',
+    'name':'eBildungslabor - Initiative von Nele Hirsch für zeitgemäßes Lehren und Lernen (CC BY)',
+    'url':'ebildungslabor.de',
+    'image':'ebildungslabor.png'
+  },
+  {
     'id': 'edutags',
     'name': 'Edutags - Social Bookmarking für Lehr- und Lernmaterial',
     'url': 'edutags.de',

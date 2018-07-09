@@ -371,6 +371,9 @@ var performSearch = function(type) {
           case 'medienistik':
             new_url = 'https://medienistik.wordpress.com/?s=' + q_encoded;
             break;
+          case 'ebildungslabor':
+            new_url = 'https://ebildungslabor.de/search/node/' + q_encoded;
+            break;
       } // eo switch/case
 
       if (new_url !== '') {
