@@ -118,11 +118,19 @@ var mixed_provider_list =
 
 var media_provider_list = [
   /* edu */
+  /* elixier - no multi select for licenses possible right now */
   {
     'id':'elixier',
-    'name':'Elixier - Bildungsuchmaschine',
+    'name':'Elixier - Bildungsuchmaschine mit mehreren Bildungsservern der Bundesländer',
     'url':'bildungsserver.de/elixier/',
     'image':'elixier.png'
+  },
+  /* no multi select for licenses possible right now */
+  {
+    'id':'learnline',
+    'name':'Learnline - NRW Buldungssuchmaschine',
+    'url':'learnline.schulministerium.nrw.de',
+    'image':'learnline.png'
   },
 
   /* photos / graphics */

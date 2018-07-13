@@ -202,6 +202,39 @@ var performSearch = function(type) {
         case 'elixier':
           new_url = OER_HOERNCHEN_BASE_URL+'/elixier?q='+q_encoded+'&license_filter_val='+license_filter_val; // this is dirty, path must be correct
           break;
+
+        case 'learnline':
+          url_license_filter = '';
+          switch (license_filter_val) {
+            case 'only-oer':
+              url_license_filter += '&copyrights[]=gemeinfrei&copyrights[]=Gemeinfrei';
+              url_license_filter += '&copyrights[]=CC-BY&copyrights[]=CC-by&copyrights[]=cc-by';
+              url_license_filter += '&copyrights[]=CC-BY-SA&copyrights[]=CC-by-sa&copyrights[]=cc-by-sa';
+              break;
+            case 'nc':
+              // 2DO: ugly coding
+              url_license_filter += '&copyrights[]=gemeinfrei&copyrights[]=Gemeinfrei';
+              url_license_filter += '&copyrights[]=CC-BY&copyrights[]=CC-by&copyrights[]=cc-by';
+              url_license_filter += '&copyrights[]=CC-BY-SA&copyrights[]=CC-by-sa&copyrights[]=cc-by-sa';
+
+              url_license_filter += '&copyrights[]=CC-BY-NC&copyrights[]=CC-by-nc&copyrights[]=cc-by-nc';
+              url_license_filter += '&copyrights[]=CC-BY-NC-SA&copyrights[]=CC-by-nc-sa&copyrights[]=cc-by-nc-sa';
+              break;
+            case 'nc-nd':
+              // 2DO: ugly coding
+              url_license_filter += '&copyrights[]=gemeinfrei&copyrights[]=Gemeinfrei';
+              url_license_filter += '&copyrights[]=CC-BY&copyrights[]=CC-by&copyrights[]=cc-by';
+              url_license_filter += '&copyrights[]=CC-BY-SA&copyrights[]=CC-by-sa&copyrights[]=cc-by-sa';
+
+              url_license_filter += '&copyrights[]=CC-BY-NC&copyrights[]=CC-by-nc&copyrights[]=cc-by-nc';
+              url_license_filter += '&copyrights[]=CC-BY-NC-SA&copyrights[]=CC-by-nc-sa&copyrights[]=cc-by-nc-sa';
+
+              url_license_filter += '&copyrights[]=CC-BY-ND&copyrights[]=CC-by-nd&copyrights[]=cc-by-nd';
+              url_license_filter += '&copyrights[]=CC-BY-NC-ND&copyrights[]=CC-by-nc-nd&copyrights[]=cc-by-nc-nd';
+              break;
+          }
+          new_url = 'http://www.learnline.schulministerium.nrw.de/suche/'+q_encoded+'/?'+url_license_filter;
+          break;
         // khanacademy does not support filter by licenses
         case 'khanacademy':
           new_url = 'https://de.khanacademy.org/search?page_search_query='+ q_encoded ;
