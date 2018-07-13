@@ -3,7 +3,7 @@
   <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p><small><span class="badge badge-danger">Datenübertragung</span> Mit dem Klick auf „Suchen“ werden Suchbegriff und die Lizenzfiltereinstellungen an <a href="https://www.bildungsserver.de/elixier/">https://www.bildungsserver.de/elixier/</a> übertragen und die Webseite in einem iFrame angezeigt, Betreiber der Webseite: Deutsche Institut für Internationale Pädagogische Forschung (DIPF), Schloßstr. 29, D-60486 Frankfurt/Main. Die Datenschutzerklärung des Anbieters findet sich <a href="https://www.bildungsserver.de/elixier/datenschutz.html" target="_blank">hier</a>.</small></p>
-                <form>
+                <form id="search">
                      <div class="form-row">
                         <div class="input-group">
                             <input type="text" class="form-control" name="search-query" id="search-query" data-i18n="[placeholder]search-query-input-placeholder" placeholder="Suchbegriff(e)...">

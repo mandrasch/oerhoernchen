@@ -337,6 +337,7 @@
 
     <?php snippet('oerhoernchen-scripts') ?>
     <script type="text/javascript">
+        var OER_HOERNCHEN_BASE_URL = '<?php echo $site->url(); ?>';
         var OERHOERNCHEN_ASSET_IMG_URL = '<?php echo $kirby->urls()->assets().'/plugins/oerhoernchen/img/'; ?>';
     </script>
     <?php echo js(array(

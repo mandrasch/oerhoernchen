@@ -65,6 +65,9 @@ var generateListNotCompatible = function(list, selector) {
 
 /* perform search function */
 var performSearch = function(type) {
+
+  // 2DO: set GET parameter to q= to make links shareable
+
   var url = ''; // the url we want to generate
 
   // reset error messages and hide everything to begin
@@ -195,6 +198,10 @@ var performSearch = function(type) {
       var url_license_filter = '';
 
       switch (provider_id) {
+        // we built a workaround, redirect to page & submit search query in form
+        case 'elixier':
+          new_url = OER_HOERNCHEN_BASE_URL+'/elixier?q='+q_encoded+'&license_filter_val='+license_filter_val; // this is dirty, path must be correct
+          break;
         // khanacademy does not support filter by licenses
         case 'khanacademy':
           new_url = 'https://de.khanacademy.org/search?page_search_query='+ q_encoded ;

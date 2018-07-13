@@ -1,12 +1,27 @@
 $(function() {
 
+
+
+	var q_param = $_GET('q');
+	if(q_param!==null){
+		$("#search-query").val(decodeURI(q_param)); // 2DO: Sanitize?
+	}
+
 	$("#search-button").click(function(e) {
 		e.preventDefault();
 		startSearch();
 	});
 
+	$('#search').submit(function(e) {
+    	e.preventDefault();
+    	startSearch();
+  	});
+
 	var startSearch = function() {
 		// get search term
+
+		// 2DO: edutags
+		// 2DO: learnline
 
 		// license
 		license_filter_val = $("select[name='license-filter']").val();
@@ -51,7 +66,7 @@ $(function() {
 			html += '<div class="iframe-block">';
 			html += '<h4>'+rights[i].title+'</h4>';
 			html += '<small><a href="'+current_url+'">in eigenem Fenster öffnen</a></small>';
-			html += '<iframe width="100%" height="350px" src="'+current_url+'"></iframe>';
+			html += '<iframe width="100%" height="390px" src="'+current_url+'"></iframe>';
 			html += '</div>';
 		}
 

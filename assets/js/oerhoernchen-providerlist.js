@@ -118,7 +118,12 @@ var mixed_provider_list =
 
 var media_provider_list = [
   /* edu */
-
+  {
+    'id':'elixier',
+    'name':'Elixier - Bildungsuchmaschine',
+    'url':'bildungsserver.de/elixier/',
+    'image':'elixier.png'
+  },
 
   /* photos / graphics */
   {
