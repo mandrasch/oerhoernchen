@@ -1,0 +1,23 @@
+title: OERhörnchen Elixier
+
+fields:
+  title:
+    label: "Title (SEO)"
+    type:  text
+  description:
+    label: "Description (SEO)"
+    type: textarea
+  menu_title:
+    label: "Title (menu)"
+    type: text
+  heading:
+    label: Heading
+    type: text
+    default: "CSE-Suche"
+  subheading:
+    label: Subheading
+    type: text
+    default: "Mit der Google Custom Search Engine (CSE) mehrere hundert Seiten nach freien Inhalten durchsuchen."
+  text:
+    label: Text
+    type:  textarea

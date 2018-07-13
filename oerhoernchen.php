@@ -5,16 +5,21 @@ $kirby->set('template','oerhoernchen-search',__DIR__ . '/templates/oerhoernchen-
 $kirby->set('template','oerhoernchen-cse',__DIR__ . '/templates/oerhoernchen-cse.php');
 $kirby->set('template','oerhoernchen-bildungsteiler',__DIR__ . '/templates/oerhoernchen-bildungsteiler.php');
 $kirby->set('template','oerhoernchen-page',__DIR__ . '/templates/oerhoernchen-page.php');
+$kirby->set('template','oerhoernchen-elixier',__DIR__ . '/templates/oerhoernchen-elixier.php');
 // always create blueprint for template, otherwise it won't show up
 $kirby->set('blueprint', 'oerhoernchen-search', __DIR__ . '/blueprints/oerhoernchen-search.yml');
 $kirby->set('blueprint', 'oerhoernchen-cse', __DIR__ . '/blueprints/oerhoernchen-cse.yml');
 $kirby->set('blueprint', 'oerhoernchen-bildungsteiler', __DIR__ . '/blueprints/oerhoernchen-bildungsteiler.yml');
 $kirby->set('blueprint', 'oerhoernchen-page', __DIR__ . '/blueprints/oerhoernchen-page.yml');
+$kirby->set('blueprint', 'oerhoernchen-elixier', __DIR__ . '/blueprints/oerhoernchen-elixier.yml');
 // snippets for templates
 $kirby->set('snippet','oerhoernchen-header', __DIR__ . '/snippets/oerhoernchen-header.php');
 $kirby->set('snippet','oerhoernchen-scripts', __DIR__ . '/snippets/oerhoernchen-scripts.php');
 $kirby->set('snippet','oerhoernchen-footer', __DIR__ . '/snippets/oerhoernchen-footer.php');
 $kirby->set('snippet','oerhoernchen-license-filter-box', __DIR__ . '/snippets/oerhoernchen-license-filter-box.php');
+
+// controller example
+//$kirby->set('controller', 'oerhoernchen-elixier', __DIR__ . '/controllers/oerhoernchen-elixier.php');
 
 //homepage redirect page
 // 2DO: is this the correct way?
