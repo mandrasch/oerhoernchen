@@ -1,6 +1,6 @@
 // 2DO: use name space, ignore this file (and images) in repo for forks
 var oer_provider_list = [
- {
+{
   'name': 'KindOERgarten.de – Freies Material für das Kindergartenalter',
   'url': 'kindoergarten.de',
   'image': 'kindoergarten.png'
@@ -20,20 +20,23 @@ var oer_provider_list = [
   'name': 'Memucho - Schneller lernen, länger wissen.',
   'url': 'memucho.de',
   'image': 'memucho.png'
-}, {
-  'name': 'Medien in die Schule (Medienpädagogik) - FSM, FSF, Google',
-  'url': 'medien-in-die-schule.de',
-  'image': 'medien-in-die-schule.jpg'
 },
 {
   'name': 'Zentrale für Unterrichtsmedien e.V.',
   'url': 'zum.de',
   'image': 'zum.jpg'
-}, {
+},  
+{
   'name': 'EDUdigitalLE - Unterrichtsmaterial von Studierenden der Universität Leipzig',
   'url': 'oer.uni-leipzig.de',
   'image': 'edudigitalle.png'
-}, {
+},
+{
+	'name':'dll -  digital.learning.lab: Hamburger Kompetenzzentrum für die Unterrichtsgestaltung in digitalen Zeiten',
+	'url':'digitallearninglab.de',
+	'image':'digitallearninglab.png'
+},
+{
   'name': 'rpi virtuell',
   'url': 'material.rpi-virtuell.de',
   'image': 'rpi_virtuell.png'
@@ -63,6 +66,16 @@ var oer_provider_list = [
   'url':'edulabs.de/oer/',
   'image':'edulabs.png'
 },{
+	'name':'Demokratielabore - ',
+	'url':'demokratielabore.de/materialsammlung/',
+	'image':'demokratielabore.png'
+},
+{
+  'name': 'Medien in die Schule (Medienpädagogik) - FSM, FSF, Google',
+  'url': 'medien-in-die-schule.de',
+  'image': 'medien-in-die-schule.jpg'
+},
+{
   'name':'Digitale Spielewelten (Medienpädagogik) - Projekt von Spielraum TH Köln, Stiftung Digitale Spielekultur',
   'url':'digitale-spielewelten.de',
   'image':'digitale_spielewelten.png'
@@ -70,7 +83,9 @@ var oer_provider_list = [
   'name': 'Wikiversity - Wikimedia Foundation',
   'url': 'de.wikiversity.org',
   'image': 'wikiversity.png'
-},];
+}];
+
+// 2DO: DLL +  Demokratielabore
 
 var mixed_provider_list =
   [{
@@ -117,29 +132,6 @@ var mixed_provider_list =
 
 
 var media_provider_list = [
-  /* edu */
-  /* elixier - no multi select for licenses possible right now */
-  {
-    'id':'elixier',
-    'name':'Elixier - Bildungsuchmaschine mit mehreren Bildungsservern der Bundesländer',
-    'url':'bildungsserver.de/elixier/',
-    'image':'elixier.png'
-  },
-  /* no multi select for licenses possible right now */
-  {
-    'id':'learnline',
-    'name':'Learnline - NRW Buldungssuchmaschine',
-    'url':'learnline.schulministerium.nrw.de',
-    'image':'learnline.png'
-  },
-
-  /* photos / graphics */
-  {
-    'id': 'pixabay',
-    'name': 'Pixabay - Fotos/Bilder unter CC0-Lizenz',
-    'url': 'pixabay.de',
-    'image': 'pixabay.png'
-  },
   {
     'id': 'flickr',
     'name': 'flickr - Bilder von Fotograf*innen aus aller Welt',
@@ -169,6 +161,35 @@ var media_provider_list = [
     'url': 'thenounproject.com',
     'image': 'nounproject.png'
   },
+  /* edu - lots of problems ;-) */
+  /* elixier - no multi select for licenses possible right now */
+  {
+    'id': 'edutags',
+    'name': 'Edutags - Social Bookmarking für Lehr- und Lernmaterial',
+    'url': 'edutags.de',
+    'image': 'edutags.png'
+  },
+  {
+    'id':'elixier',
+    'name':'Elixier - Bildungsuchmaschine mit mehreren Bildungsservern der Bundesländer',
+    'url':'bildungsserver.de/elixier/',
+    'image':'elixier.png'
+  },
+  /* no multi select for licenses possible right now */
+  {
+    'id':'learnline',
+    'name':'Learnline - NRW Buldungssuchmaschine',
+    'url':'learnline.schulministerium.nrw.de',
+    'image':'learnline.png'
+  },
+  /* photos / graphics */
+  /* pixabay changed license unfortunately, no CC0 anymore */
+  /*{
+    'id': 'pixabay',
+    'name': 'Pixabay - Fotos/Bilder unter CC0-Lizenz',
+    'url': 'pixabay.de',
+    'image': 'pixabay.png'
+  },*/
   /* cultural heritage */
   {
     'id': 'europeana',
@@ -195,13 +216,14 @@ var media_provider_list = [
     'name': 'YouTube',
     'url': 'youtube.com',
     'image': 'youtube.png'
-  }, 
-  {
+  },
+  /* pixabay changed license unfortunately, no CC0 anymore */ 
+  /*{
     'id': 'pixabay-video',
     'name': 'Pixabay - Videos unter CC0-Lizenz',
     'url': 'pixabay.de',
     'image': 'pixabay_video.png'
-  },
+  },*/
   {
     'id': 'khanacademy',
     'name': 'Khanacademy - Interaktive Lerninhalte unter CC BY-NC-SA',
@@ -261,12 +283,6 @@ var media_provider_list = [
     'name':'eBildungslabor - Initiative von Nele Hirsch für zeitgemäßes Lehren und Lernen (CC BY)',
     'url':'ebildungslabor.de',
     'image':'ebildungslabor.png'
-  },
-  {
-    'id': 'edutags',
-    'name': 'Edutags - Social Bookmarking für Lehr- und Lernmaterial',
-    'url': 'edutags.de',
-    'image': 'edutags.png'
   },
   {
     'id':'wbweb',
