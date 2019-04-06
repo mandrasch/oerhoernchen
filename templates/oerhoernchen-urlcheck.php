@@ -23,7 +23,7 @@
 
 
                     <div class="alert alert-success" role="alert">
-                    Sehr gut! Der URL-Check hat ergeben, dass auf der Webseite mit der eingegeben URL eine maschinenlesbare Lizenzinformation hinterlegt ist:<br>
+                    Sehr gut! Der URL-Check hat ergeben, dass auf der Webseite mit der eingegebenen URL eine maschinenlesbare Lizenzinformation hinterlegt ist:<br>
                     </div>
                     <div style="padding:2px;background:#CCC;border:1px solid grey;text-align:center;">
                         <p><span id="workLicenseUrl" style="font-size:14px;font-family:'Courier';"></span></p>
