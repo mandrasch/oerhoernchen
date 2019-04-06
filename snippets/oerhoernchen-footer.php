@@ -13,7 +13,7 @@
                                     </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://matthias-andrasch.de/kontakt">
+                                <a href="https://matthias-andrasch.de">
                                         <span class="fa-stack fa-lg">
                                             <i class="fa fa-circle fa-stack-2x"></i>
                                             <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
@@ -30,9 +30,10 @@
                             </li>
                         </ul>
                         <p class="copyright text-muted">
-                            Foto: <a href="https://pixabay.com/de/eichh%C3%B6rnchen-f%C3%BCttern-futter-nuss-2781394/">Annawadl (Pixabay/CC0)</a> | Theme: <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> (MIT License)</a> | CMS: <a href="https://getkirby.com/" target="_blank">Kirby 2</a> (commercial)
+                            Alle Textinhalte, sofern nicht anders angegeben: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" rel="license" target="_blank">CC0</a><br /><br>
+                            Foto: <a href="https://pixabay.com/de/eichh%C3%B6rnchen-f%C3%BCttern-futter-nuss-2781394/">Annawadl (Pixabay/CC0)</a> | Theme: <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> (MIT License)</a> | CMS: <a href="https://getkirby.com/" target="_blank">Kirby 2</a> (commercial) <br />
                             <br> Disclaimer: Auf dieser Webseite findet keine Rechtsberatung statt, es wird keine Haftung für Folgen der Nutzung der Werkzeuge der OERhörnchen-Seite übernommen.
-                            <br><a href="<?php echo url('impressum');?>">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt</a>
+                            <br><br><a href="<?php echo url('impressum');?>">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt (CC0)</a> | <a href="https://github.com/programmieraffe/oerhoernchen/issues" target="_blank">Fehler melden /Verbesserungsvorschlag einreichen</a>
                         </p>
                     </div>
                 </div>
