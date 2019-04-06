@@ -79,7 +79,14 @@
             <div id="urlcheck-results-error" class="alert alert-danger" role="alert" style="display:none;margin-top:20px;">
             </div>
 
+
                   <p style="font-size:70%;text-align:center;"><i>Für die Korrektheit der ermittelten Informationen wird keine Haftung übernommen, bitte noch einmal genau auf der jeweiligen Seite und in den Nutzungsbedingungen nachschauen. Der Check gilt nur für die eingebene URL, andere Unterseiten einer Webseite können eine andere Lizenzinformation enthalten.</i></p>
+            <hr>
+
+            <div class="text wrap">
+              <?=$page->text()->kirbytext()?>
+            </div>
+
 
             </div>
         </div>
