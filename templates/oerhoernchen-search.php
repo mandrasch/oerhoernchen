@@ -1,4 +1,4 @@
-<?php snippet('oerhoernchen-header') ?>
+<?php snippet('oerhoernchen-header')?>
 <div class="container">
 
 <div class="row" style="display:none;">
@@ -21,6 +21,7 @@
 
 <div class="row" id="edu-projects-search">
     <div class="col-lg-8 col-md-10 mx-auto" id="search-box">
+    	<p><small>Neu - jetzt testen: Die <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a></small></p>
     	<h3 name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
         <div class="card">
             <div class="card-header">Suchbegriff</div>
@@ -86,7 +87,7 @@
     </div>
     <div class="col-lg-8 col-md-10 mx-auto">
     <div class="license-filter-box" id="edu-projects-search-license-filter">
-        <?php snippet('oerhoernchen-license-filter-box'); ?>
+        <?php snippet('oerhoernchen-license-filter-box');?>
     </div><!-- eo license filter box -->
     </div>
 </div>
@@ -335,14 +336,14 @@
         </div>
     </div>
 
-    <?php snippet('oerhoernchen-scripts') ?>
+    <?php snippet('oerhoernchen-scripts')?>
     <script type="text/javascript">
         var OER_HOERNCHEN_BASE_URL = '<?php echo $site->url(); ?>';
-        var OERHOERNCHEN_ASSET_IMG_URL = '<?php echo $kirby->urls()->assets().'/plugins/oerhoernchen/img/'; ?>';
+        var OERHOERNCHEN_ASSET_IMG_URL = '<?php echo $kirby->urls()->assets() . '/plugins/oerhoernchen/img/'; ?>';
     </script>
     <?php echo js(array(
-        'assets/plugins/oerhoernchen/js/oerhoernchen-providerlist.js',
-        'assets/plugins/oerhoernchen/js/oerhoernchen-search.js'
-    )); ?>
+	'assets/plugins/oerhoernchen/js/oerhoernchen-providerlist.js',
+	'assets/plugins/oerhoernchen/js/oerhoernchen-search.js',
+)); ?>
 
-<?php snippet('oerhoernchen-footer') ?>
+<?php snippet('oerhoernchen-footer')?>
