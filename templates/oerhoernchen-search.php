@@ -22,6 +22,9 @@
 <div class="row" id="edu-projects-search">
     <div class="col-lg-8 col-md-10 mx-auto" id="search-box">
     	<p><small>Neu - jetzt testen: Die <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a></small></p>
+
+      <p><small>Event-Hinweis - 2x OERcamp in Hamburg: Offenes Barcamp plus Werkstatt vom 20. bis 23. Februar 2020 - <a href="https://www.oercamp.de/werkstatt/hoou/" target="_blank">es sind noch Plätze frei!</a></small></p>
+
     	<h3 name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
         <div class="card">
             <div class="card-header">Suchbegriff</div>
