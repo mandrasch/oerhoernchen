@@ -274,7 +274,7 @@ $items = $pages->visible();
       <div class="row">
         <div class="col-12">
           <div class="text-center">
-            <a href="https://www.wikimedia.de/oeffentliches-gut" target="_blank"><img src="<?php echo url('assets/plugins/oerhoernchen/img/oegoeg_header_wikimedia_oeffentliches_geld_oeffentliches_gut_kampagne_2020.jpg');?>" class="rounded img-fluid" alt="Öffentliches Geld Öffentliches Gut Kampagne der Wikimedia" style="max-width: 600px;border:2px #FFA600 solid"></a>
+            <a href="https://www.wikimedia.de/oeffentliches-gut" target="_blank"><img src="<?php echo url('assets/plugins/oerhoernchen/img/oegoeg_header_wikimedia_oeffentliches_geld_oeffentliches_gut_kampagne_2020.jpg');?>" class="rounded img-fluid" alt="Öffentliches Geld Öffentliches Gut Kampagne der Wikimedia" style="border:2px #FFA600 solid"></a>
           </div>
         </div>
       </div>
