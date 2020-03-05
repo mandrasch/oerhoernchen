@@ -21,7 +21,7 @@
 
 <div class="row" id="edu-projects-search">
     <div class="col-lg-8 col-md-10 mx-auto" id="search-box">
-    	<p><small>Jetzt: Die <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a></small></p>
+    	<p><small>Jetzt testen: Die <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> (Prototyp) / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a></small></p>
 
     	<h3 name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
         <div class="card">

@@ -25,7 +25,7 @@
     <!-- Bei Bedarf folgende Favicons als Basis -->
     <!-- Favicons -->
     <link rel="shortcut icon" href="<?php echo url('/assets/plugins/oerhoernchen/img/favicon.ico') ?>" />
-    
+
 
   <?php echo css(array('assets/plugins/oerhoernchen/css/bootstrap.min.css',
       'assets/plugins/oerhoernchen/css/font-awesome/css/font-awesome.min.css',
@@ -240,13 +240,12 @@ $items = $pages->visible();
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-    <?php foreach($items as $item): ?>
+    <?php foreach ($items as $item): ?>
     <li class="nav-item"><a<?php e($item->isOpen(), ' class="nav-link active"', ' class="nav-link"') ?> href="<?= $item->url() ?>">
-      <?php if($item->menu_title()->empty()){
-        echo $item->title()->html();
-      }
-      else{
-        echo $item->menu_title()->html();
+      <?php if ($item->menu_title()->empty()) {
+    echo $item->title()->html();
+} else {
+          echo $item->menu_title()->html();
       }
       ?></a></li>
     <?php endforeach ?>
@@ -256,14 +255,14 @@ $items = $pages->visible();
     </nav>
 
 
-    <?php //2DO: use blueprint image field to select different image for each page or default one ?>
+    <?php //2DO: use blueprint image field to select different image for each page or default one?>
     <header class="masthead" style="background-image: url('<?php echo url('assets/plugins/oerhoernchen/img/squirrel-2781394_1920_pixabay_annawaldl.jpg');?>')">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="site-heading">
-                        <h1><?php echo $page->heading()->html(); ?></h1> 
+                        <h1><?php echo $page->heading()->html(); ?></h1>
                         <span class="subheading"><?php echo html($page->subheading()); ?></span>
                     </div>
                 </div>
@@ -271,3 +270,12 @@ $items = $pages->visible();
         </div>
     </header>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <a href="https://www.wikimedia.de/oeffentliches-gut" target="_blank"><img src="<?php echo url('assets/plugins/oerhoernchen/img/oegoeg_header_wikimedia_oeffentliches_geld_oeffentliches_gut_kampagne_2020.jpg');?>" class="rounded img-fluid" alt="Öffentliches Geld Öffentliches Gut Kampagne der Wikimedia" style="max-width: 600px;border:2px #FFA600 solid"></a>
+          </div>
+        </div>
+      </div>
+    </div>
