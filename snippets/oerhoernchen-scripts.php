@@ -8,5 +8,7 @@
    'assets/plugins/oerhoernchen/js/jquery.min.js',
   'assets/plugins/oerhoernchen/js/bootstrap.bundle.min.js',
   'assets/plugins/oerhoernchen/js/clean-blog.min.js',
+  'assets/plugins/oerhoernchen/js/cookieconsent.min.js',
+  'assets/plugins/oerhoernchen/js/cookieconsent.matomo.js',
   'assets/plugins/oerhoernchen/js/oerhoernchen.js',
 )); ?>

@@ -21,9 +21,27 @@
 
 <div class="row" id="edu-projects-search">
     <div class="col-lg-8 col-md-10 mx-auto" id="search-box">
-    	<p><small>Jetzt testen: Die <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> (Prototyp) / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a></small></p>
 
-    	<h3 name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
+
+      <div class="alert alert-primary" role="alert"><small><i class="fa fa-bullhorn" aria-hidden="true"></i>
+        Offenes Lernangebot ab 16.03.2020: <a href="https://edunauten.de" target="_blank">edunauten.de - zeitgemäße Pädagogik <i class="fa fa-external-link" aria-hidden="true"></i></a></small>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="alert alert-dark" role="alert"><small><i class="fa fa-university" aria-hidden="true"></i> Testen: <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a></small>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="alert alert-dark" role="alert"><small><i class="fa fa-firefox" aria-hidden="true"></i> Testen: Browser-Plugin für <a href="https://addons.mozilla.org/en-US/firefox/addon/oerh%C3%B6rnchen/" target="_blank">Firefox</a> und <a href="https://chrome.google.com/webstore/detail/oerh%C3%B6rnchen/oojclmchomjdmmgjcfgekmbanplfmgel?hl=de" target="_blank">Chrome</a></small>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+    	<h3 class="text-center mt-5 mb-5" name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
         <div class="card">
             <div class="card-header">Suchbegriff</div>
             <div class="card-body">
@@ -104,8 +122,17 @@
 
 <div class="row" id="media-search"  style="margin-top:30px;" >
     <div class="col-lg-8 col-md-10 mx-auto">
-    	<h3 name="mediasearch"><a href="#mediasearch" data-toggle="tooltip" data-html="true" title='Nach offenen Inhalten (Audio, Foto, Video, etc.) auf Medienportalen suchen, die nicht zwangsläufig für Lehren/Lernen erstellt wurden. Diese können aber für die Erstellung von OER-Material eingesetzt werden.'><i class="fa fa-question-circle" aria-hidden="true"></i></a> Mediensuche</h3>
+      <h3 name="mediasearch"><a href="#mediasearch" data-toggle="tooltip" data-html="true" title='Nach offenen Inhalten (Audio, Foto, Video, etc.) auf Medienportalen suchen, die nicht zwangsläufig für Lehren/Lernen erstellt wurden. Diese können aber für die Erstellung von OER-Material eingesetzt werden.'><i class="fa fa-question-circle" aria-hidden="true"></i></a> Mediensuche</h3>
           <p class="explanation" style="line-height:1.1;margin-top:10px;"></small></p>
+
+          <div class="alert alert-info" role="alert"><small><i class="fa fa-picture-o" aria-hidden="true"></i>
+            Neues Angebot für Bilder seit Ende 2019: <a href="https://search.creativecommons.org" target="_blank">search.creativecommons.org</a> (Version 2)</small>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+
                     <div class="card">
                         <div class="card-header">
                             Suchbegriff
@@ -254,8 +281,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <p class="text-center">Viele Webseiten stammen aus der <a href="https://www.was-ist-oer.de/oer-finden-anlaufstellen-fuer-freie-materialien/" target="_blank">Mega-Liste</a> des großartigen Werks <a href="https://www.was-ist-oer.de/buch/" target="_blank">Das OER-Buch: Freie Unterrichtsmaterialien finden, rechtssicher einsetzen, selbst machen und teilen</a> (Beltz Verlag, CC BY SA 4.0) von Jöran Muuß-Merholz.</p>
                 </div>
             </div>
     </div>
@@ -274,8 +299,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="search-success">
-                        <p data-i18n="modal-text-search-success"> Das OERhörnchen hat die Suchanfrage generiert und vorbereitet. Die Google-Suchergebnisseite  kann hier geöffnet werden (derzeit unterstützt nur die Google-Suchmachine das Filtern nach Lizenzen):</p>
-                        <p style="text-align:center;"><a target="_blank" class="modal-search-url search-success-open-url btn-primary btn" data-i18n="modal-link-text"><i class="fa fa-external-link" aria-hidden="true"></i> Google-Suche öffnen</a></p>
+                        <p data-i18n="modal-text-search-success"> Das OERhörnchen hat die Suchanfrage vorbereitet und erweiterte Einstellungen wie die  Lizenzen als URL-Parameter gesetzt, Ergebnisse hier öffnen:</p>
+                        <p style="text-align:center;"><a target="_blank" class="modal-search-url search-success-open-url btn-primary btn" data-i18n="modal-link-text"><i class="fa fa-external-link" aria-hidden="true"></i> Google-Suchergebnisse öffnen</a></p>
                         <!--<p data-i18n="modal-link-share">Link zum Teilen:</p>
             <div class="input-group">
               <input type="text" class="form-control" id="modal-search-input" title="modal-input"/>
@@ -299,7 +324,7 @@
                         <p data-i18n="modal-text-search-error">Die Google-Suche erlaubt maximal 32 Wörter im Suchfeld, bitte weniger Suchbegriffe nutzen oder weniger Projekte auswählen (jedes Projekt zählt als ein Wort)</p>
                         <p><a target="_blank" class="modal-search-url" data-i18n="modal-button-search-despite">Suche trotzdem öffnen</a></p>
                     </div>
-                    <p style="line-height:1.0;"><!--<img src="img/squirrel_pixabay_cocoparisienne_250497_cc0.jpg" class="rounded float-right" style="max-width:120px;" role="presentation" />--><small>Das OERhörnchen <b>verlinkt</b> auf externe Online-Dienste bzw. Webseiten. Für die Richtigkeit der Angaben auf externen Seiten wird keine Haftung übernommen, bitte stets selber prüfen! <span style="color:red;">Die hier eingegebenen Suchbegriffe sowie die Lizenzeinstellungen werden mittels der URL (als GET-Parameter) an externe Seiten übermittelt.</span> <!--Nutzerbezogene Daten übermittelt das OERhörnchen nicht an externe Anbieter. Anonymisierte Statistiken zur Seitenbenutzung werden anonym auf einem eigenen Piwik/Matomo-Server erhoben und sollen in Zukunft der Allgemeinheit als Open Data zur Verfügung gestellt werden. --> Weitere Informationen: <a href="<?php echo url('impressum'); ?>" target="_blank">Datenschutzerklärung</a></small></p>
+                    <p style="line-height:1.0;"><!--<img src="img/squirrel_pixabay_cocoparisienne_250497_cc0.jpg" class="rounded float-right" style="max-width:120px;" role="presentation" />--><small>Das OERhörnchen <b>verlinkt</b> auf externe Online-Dienste bzw. Webseiten. Für die Richtigkeit der Angaben auf externen Seiten wird keine Haftung übernommen, bitte stets selber prüfen! Die hier eingegebenen Suchbegriffe sowie die Lizenzeinstellungen werden mittels der URL (als GET-Parameter) an externe Seiten übermittelt, sobald die Besucher:innen auf den externen Link klicken.  <!--Nutzerbezogene Daten übermittelt das OERhörnchen nicht an externe Anbieter. Anonymisierte Statistiken zur Seitenbenutzung werden anonym auf einem eigenen Piwik/Matomo-Server erhoben und sollen in Zukunft der Allgemeinheit als Open Data zur Verfügung gestellt werden. --> Weitere Informationen: <a href="<?php echo url('impressum'); ?>" target="_blank">Datenschutzerklärung</a></small></p>
                    <!-- <p data-i18n="[html]modal-text-feedback">Feedback oder Fragen? Sehr gerne <a href="mailto:info@matthias-andrasch.de" target="_blank"> bei mir melden</a>!-->
                     </p>
                 </div>
@@ -343,8 +368,8 @@
         var OERHOERNCHEN_ASSET_IMG_URL = '<?php echo $kirby->urls()->assets() . '/plugins/oerhoernchen/img/'; ?>';
     </script>
     <?php echo js(array(
-	'assets/plugins/oerhoernchen/js/oerhoernchen-providerlist.js',
-	'assets/plugins/oerhoernchen/js/oerhoernchen-search.js',
+    'assets/plugins/oerhoernchen/js/oerhoernchen-providerlist.js',
+    'assets/plugins/oerhoernchen/js/oerhoernchen-search.js',
 )); ?>
 
 <?php snippet('oerhoernchen-footer')?>

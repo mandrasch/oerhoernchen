@@ -30,8 +30,10 @@
   <?php echo css(array('assets/plugins/oerhoernchen/css/bootstrap.min.css',
       'assets/plugins/oerhoernchen/css/font-awesome/css/font-awesome.min.css',
       'assets/plugins/oerhoernchen/css/clean-blog.min.css',
+      'assets/plugins/oerhoernchen/css/cookieconsent.min.css',
       'assets/plugins/oerhoernchen/css/oerhoernchen.css',
       'assets/plugins/oerhoernchen/css/oerhoernchen-search.css')); ?>
+
 
 <style type="text/css">
 

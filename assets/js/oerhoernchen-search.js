@@ -31,7 +31,7 @@ var generateList = function(list, selector) {
     }
 
     // 2DO: if tracking is enabled: we need to remove the a tag, because piwik tracks clinks on it as external link
-    // 2DO: find method to not track the a link in matomo/piwik 
+    // 2DO: find method to not track the a link in matomo/piwik
     var html = '<div class="col-xs-6 col-sm-3 col-md-3 nopad text-center">' +
       '<a href="https://'+object.url+'">'+
       '<label class="image-checkbox" data-providerlist="'+selector+'">' +
@@ -171,9 +171,11 @@ var performSearch = function(type) {
     // 2DO: not working because of delay? - check later
     urlDiv.off('click'); //unbind all click events
     urlDiv.on('click', function() {
-      console.log('piwik tracking, tracking outlink: ', url);
-      if (typeof _paq !== 'undefined') {
-        _paq.push(['trackLink', url, 'link']);
+      if(OER_HOERNCHEN_ANALYSIS_ENABLED == true){
+        console.log('Piwik tracking, tracking outlink: ', url);
+        if (typeof _paq !== 'undefined') {
+          _paq.push(['trackLink', url, 'link']);
+        }
       }
     }); // eo piwik link tracking
 
@@ -463,20 +465,14 @@ var performSearch = function(type) {
   // TRACKING (for open data)
   // piwik event tracking (experimental)
   // https://piwik.org/docs/event-tracking/
-  if (typeof _paq !== 'undefined') {
-
-    // exception for a custom site/domain search
-    if(type === "edu-projects" && edu_projects_site_url_search === true){
-      type = "custom-site";
-    }
-
+  if (OER_HOERNCHEN_ANALYSIS_ENABLED === true) {
     _paq.push(['trackEvent', type + '-search', 'generated']);
   } // eo piwik event tracking
 
   // piwik internal search tracking (experimental)
   // track keyword
   // 2DO: check if type is media,web oder eduprojects
-  if (typeof _paq !== 'undefined') {
+  if (OER_HOERNCHEN_ANALYSIS_ENABLED === true) {
     _paq.push(['trackSiteSearch',
       // Search keyword searched for
       keyword,
@@ -485,6 +481,7 @@ var performSearch = function(type) {
       // Number of results on the Search results page. Zero indicates a 'No Result Search Keyword'. Set to false if you don't know
       false
     ]);
+    console.log('tracked site search (keyword,type)',keyword,type);
   } // eo internal piwik search tracking
 
 }; // eo performSearch
@@ -524,7 +521,7 @@ $(document).ready(function() {
       if($("#media-search-multiselect-checkbox").is(':checked') === false){
         // deselect/uncheck previous activated
         $('#media-provider-list').find('input[type="checkbox"]:checked').prop('checked',false);
-        $('#media-provider-list').find('.image-checkbox-checked').removeClass('image-checkbox-checked'); 
+        $('#media-provider-list').find('.image-checkbox-checked').removeClass('image-checkbox-checked');
       }
     }
 

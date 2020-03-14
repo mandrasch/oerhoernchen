@@ -35,6 +35,9 @@
                             <br> Disclaimer: Auf dieser Webseite findet keine Rechtsberatung statt, es wird keine Haftung für Folgen der Nutzung der Werkzeuge der OERhörnchen-Seite übernommen.
                             <br><br><a href="<?php echo url('impressum');?>">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt (CC0)</a> | <a href="https://github.com/programmieraffe/oerhoernchen/issues" target="_blank">Fehler melden /Verbesserungsvorschlag einreichen</a>
                         </p>
+                        <p class="copyright text-muted">
+                          <a href="" onclick="openCCbanner(); return false;"> <i class="fa fa-cog" aria-hidden="true"></i> Datenschutz/Cookie-Einstellungen</a>
+                        </p>
                     </div>
                 </div>
             </div>
