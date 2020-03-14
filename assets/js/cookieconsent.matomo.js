@@ -59,8 +59,8 @@ window.addEventListener("load", function() {
     "position": "bottom-left",
     "type": "opt-in",
     "content": {
-      "message": "Darf das OERhörnchen Dein Nutzungsverhalten auf dieser Webseite sowie Deine eingegebenen Suchbegriffe auf dieser Webseite anonymisiert (ohne personenbezogene Daten) speichern und der Öffentlichkeit als Open Data zur Verfügung stellen, um zeitgemäße Bildung voranzubringen? Hierfür sind Cookies nötig, als Analysesoftware wird Matomo genutzt.",
-      "deny": "Nein, heute bitte nicht.",
+      "message": "Darf das OERhörnchen Dein Nutzungsverhalten auf dieser Webseite sowie Deine eingegebenen Suchbegriffe auf dieser Webseite anonymisiert (ohne personenbezogene Daten) speichern und der Öffentlichkeit als Open Data zur Verfügung stellen, um zeitgemäße Bildung voranzubringen? Hierfür sind Cookies nötig.",
+      "deny": "Nein, bitte nicht.",
       "allow": "Ja, gerne",
       "link": "Datenschutzerklärung",
       "href": "/impressum",
@@ -85,12 +85,14 @@ window.addEventListener("load", function() {
         console.log('User has sent consent before, embed tracking');
         // enable cookies
         OER_HOERNCHEN_ANALYSIS_ENABLED = true;
+        $(".trackingInfo").html("Aktiviert");
         embedTrackingCode();
       }
       if (type == 'opt-in' && !didConsent) {
         console.log('User has not consented before');
         // disable cookies
         OER_HOERNCHEN_ANALYSIS_ENABLED = false;
+        $(".trackingInfo").html("Deaktiviert");
       }
     },
     onStatusChange: function(status, chosenBefore) {
@@ -99,11 +101,13 @@ window.addEventListener("load", function() {
       if (type == 'opt-in' && didConsent) {
         // enable cookies
         OER_HOERNCHEN_ANALYSIS_ENABLED = true;
+        $(".trackingInfo").html("Aktiviert");
         embedTrackingCode();
       }
       if (type == 'opt-in' && !didConsent) {
         // disable cookies
         OER_HOERNCHEN_ANALYSIS_ENABLED = false;
+        $(".trackingInfo").html("Deaktiviert");
         deleteMatomoCookies();
       }
     },

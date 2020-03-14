@@ -30,15 +30,12 @@
         </button>
       </div>
 
-      <div class="alert alert-dark" role="alert"><small><i class="fa fa-university" aria-hidden="true"></i> Testen: <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a></small>
+      <div class="alert alert-dark" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="alert alert-dark" role="alert"><small><i class="fa fa-firefox" aria-hidden="true"></i> Testen: Browser-Plugin für <a href="https://addons.mozilla.org/en-US/firefox/addon/oerh%C3%B6rnchen/" target="_blank">Firefox</a> und <a href="https://chrome.google.com/webstore/detail/oerh%C3%B6rnchen/oojclmchomjdmmgjcfgekmbanplfmgel?hl=de" target="_blank">Chrome</a></small>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <small><i class="fa fa-university" aria-hidden="true"></i> Testen: <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a><br>
+        <i class="fa fa-firefox" aria-hidden="true"></i> Testen: Browser-Plugin für <a href="https://addons.mozilla.org/en-US/firefox/addon/oerh%C3%B6rnchen/" target="_blank">Firefox</a> und <a href="https://chrome.google.com/webstore/detail/oerh%C3%B6rnchen/oojclmchomjdmmgjcfgekmbanplfmgel?hl=de" target="_blank">Chrome</a></small>
       </div>
 
     	<h3 class="text-center mt-5 mb-5" name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>

@@ -36,7 +36,7 @@
                             <br><br><a href="<?php echo url('impressum');?>">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt (CC0)</a> | <a href="https://github.com/programmieraffe/oerhoernchen/issues" target="_blank">Fehler melden /Verbesserungsvorschlag einreichen</a>
                         </p>
                         <p class="copyright text-muted">
-                          <a href="" onclick="openCCbanner(); return false;"> <i class="fa fa-cog" aria-hidden="true"></i> Datenschutz/Cookie-Einstellungen</a>
+                          <a href="" onclick="openCCbanner(); return false;"> <i class="fa fa-cog" aria-hidden="true"></i> Datenschutz/Cookie-Einstellungen anpassen</a> (Tracking: <span class="trackingInfo"></span>)
                         </p>
                     </div>
                 </div>
