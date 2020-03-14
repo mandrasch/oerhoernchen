@@ -13,5 +13,5 @@
 
     </div><!-- eo container -->
     <hr>
-
+<?php snippet('oerhoernchen-scripts')?>
 <?php snippet('oerhoernchen-footer') ?>
