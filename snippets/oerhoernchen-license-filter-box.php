@@ -2,12 +2,12 @@
             <div class="card-header">
                 <a data-toggle="tooltip" data-html="true" title="Das OERhörnchen nutzt maschinenlesbare Lizenzangaben, welche im Quelltext einer Webseite stehen. Mit Hilfe dieser Angabe weiß eine Suchmaschine wie Google, ob eine bestimmte Unterseite unter einer freien Creative Commons Lizenz lizenziert ist. Wer dies für seine eigene Webseite machen möchte, kann den OERhörnchen Bildungsteiler einsetzen."><i class="fa fa-question-circle" aria-hidden="true"></i></a>
             	<a class="card-body-toggle" href="">
-            	<i class="fa fa-chevron-down pull-right toggle-icon"></i>
+            	<i class="fa fa-chevron-up pull-right toggle-icon"></i>
                 <!-- <a href="#faq-license-machine-readibility" class="js-scroll-trigger"><i class="fa fa-question-circle" aria-hidden="true"></i></a>--> <span class="license-filter-heading">Lizenzfilter</span> <!-- (Maschinenlesbare Creative-Commons-Lizenzen)-->
             	</a>
             </div>
             <!-- <div> -->
-            <div class="card-body" style="display:none;">
+            <div class="card-body" <?php //style="display:none;" ?>>
                 <div class="form-group">
                 <!--<label for="exampleFormControlSelect1">Lizenzfilter:</label>-->
                     <select class="form-control" name="license-filter">
