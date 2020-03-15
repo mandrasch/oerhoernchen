@@ -42,6 +42,11 @@ var oer_provider_list = [
     'image': 'memucho.png'
   },
   {
+    'name': 'Demokratielabore Materialsammlung',
+    'url': 'demokratielabore.de/materialsammlung/',
+    'image': 'demokratielabore.png'
+  },
+  {
     'name': 'Medien in die Schule (Medienpädagogik) - FSM, FSF, Google',
     'url': 'medien-in-die-schule.de',
     'image': 'medien-in-die-schule.jpg'
@@ -95,8 +100,6 @@ var oer_provider_list = [
     'image': 'wikiversity.png'
   }
 ];
-
-// 2DO: DLL +  Demokratielabore
 
 var mixed_provider_list = [{
     'name': 'tutory.de - Arbeitsblätter online gestalten',
@@ -342,11 +345,6 @@ badge image from pixabay: https://pixabay.com/de/abzeichen-flair-englisch-sprach
     'name': 'Digitale Spielewelten (Medienpädagogik) - Projekt von Spielraum TH Köln, Stiftung Digitale Spielekultur',
     'url': 'digitale-spielewelten.de',
     'image': 'digitale_spielewelten.png'
-  },
-  {
-    'name': 'Demokratielabore - ',
-    'url': 'demokratielabore.de/materialsammlung/',
-    'image': 'demokratielabore.png'
   },
   {
     'name': 'Roberta - Lernen mit Robotern: Materialien',
