@@ -56,10 +56,13 @@ window.addEventListener("load", function() {
         "background": "#62ffaa"
       }
     },
+    // disable revoke floating layer, because it was annoying on small mobile devices
+    // does not work, hide it via css
+    //"revokable":false,
     "position": "bottom-left",
     "type": "opt-in",
     "content": {
-      "message": "Darf das OERhörnchen Dein Nutzungsverhalten auf dieser Webseite sowie Deine eingegebenen Suchbegriffe auf dieser Webseite anonymisiert (ohne personenbezogene Daten) speichern und der Öffentlichkeit als Open Data zur Verfügung stellen, um zeitgemäße Bildung voranzubringen? Hierfür sind Cookies nötig.",
+      "message": "Darf das OERhörnchen Dein Nutzungsverhalten auf dieser Webseite sowie Deine eingegebenen Suchbegriffe auf dieser Webseite anonymisiert (ohne personenbezogene Daten) speichern und der Öffentlichkeit als Open Data zur Verfügung stellen, um zeitgemäße Bildung voranzubringen? Hierfür sind Cookies nötig, Einstellung ist jederzeit wieder änderbar.",
       "deny": "Nein, bitte nicht.",
       "allow": "Ja, gerne",
       "link": "Datenschutzerklärung",

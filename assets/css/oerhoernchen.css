@@ -105,3 +105,5 @@
   100% { transform: rotate(360deg); }
 }
 
+/* quick fix for osano cookie notice */
+.cc-revoke{display:none;}
