@@ -45,7 +45,7 @@ function deleteMatomoCookies() {
 
 // Insites Cookie Consent with Opt-IN for MATOMO tracking Cookie
 // Source: https://cookieconsent.osano.com/documentation/disabling-cookies/
-window.addEventListener("load", function() {
+$(document).ready(function() {
 
   window.cookieconsent.initialise({
     "palette": {
@@ -126,7 +126,7 @@ window.addEventListener("load", function() {
     },
 
   })
-});
+}); // eo jQuery
 
 
 // function for triggering a click on the cc-revoke button
