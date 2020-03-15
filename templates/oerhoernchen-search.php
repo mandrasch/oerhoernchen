@@ -34,11 +34,12 @@
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <small><i class="fa fa-university" aria-hidden="true"></i> Testen: <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> / Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork von Steffen Rörtgen</a><br>
+        <small><i class="fa fa-university" aria-hidden="true"></i> Testen: <a href="https://beta2.oerhoernchen.de/hochschule" target="_blank">Hochschul-OER-Suche</a> (Neu: <a href="https://github.com/sroertgen/oerhoernchen20_docker" target="_blank">Docker-Fork Steffen Rörtgen)</a><br>
         <i class="fa fa-firefox" aria-hidden="true"></i> Testen: Browser-Plugin für <a href="https://addons.mozilla.org/en-US/firefox/addon/oerh%C3%B6rnchen/" target="_blank">Firefox</a> und <a href="https://chrome.google.com/webstore/detail/oerh%C3%B6rnchen/oojclmchomjdmmgjcfgekmbanplfmgel?hl=de" target="_blank">Chrome</a></small>
       </div>
 
-    	<h3 class="text-center mt-5 mb-5" name="projectsearch"><a href="#projectsearch" data-toggle="tooltip" data-html="true" title="Mit der OERhörnchen Projektsuche können gezielt Lehr-/Lernmaterialen aus Bildungsprojekten bzw. von Bildungsplattformen gefunden werden, welche legal nutzbar und frei veränderbar sind."><i class="fa fa-question-circle" aria-hidden="true"></i></a> Projektsuche</h3>
+    	<h3 class="text-center mt-5" name="projectsearch"><a href="#projectsearch"></a> Bildungsmaterialsuche</h3>
+      <p><small>Mit der OERhörnchen Bildungsmaterialsuche können gezielt Lehr-/Lernmaterialien von ausgewählten Bildungsprojekten gefunden werden, welche durch eine freie Lizenz legal nutz- und veränderbar sind. (👉 <a href="/oer-buch/" target="_blank">Open Educational Resources</a>). <b>Einfach im Suchfeld einen Suchbegriff eingeben und Materialien finden.</b> (Unten finden sich <a href="#not-compatible">weitere Angebote</a> sowie die <a href="#media-search">Mediensuche</a>.)</small></p>
         <div class="card">
             <div class="card-header">Suchbegriff</div>
             <div class="card-body">
@@ -111,16 +112,33 @@
     <div class="col-12">
         <div class="text-center">
             <button type="button" class="btn btn-primary btn-lg edu-projects-search-submit-button">
-            <i class="fa fa-search" aria-hidden="true"></i> <span data-i18n="search-button">Projektsuche starten</span>
+            <i class="fa fa-search" aria-hidden="true"></i> <span data-i18n="search-button">Materialsuche starten</span>
             </button>
         </div>
     </div>
 </div> <!-- eo project search -->
 
-<div class="row" id="media-search"  style="margin-top:30px;" >
+
+
+<div id="not-compatible" class="row not-compatible" >
     <div class="col-lg-8 col-md-10 mx-auto">
-      <h3 name="mediasearch"><a href="#mediasearch" data-toggle="tooltip" data-html="true" title='Nach offenen Inhalten (Audio, Foto, Video, etc.) auf Medienportalen suchen, die nicht zwangsläufig für Lehren/Lernen erstellt wurden. Diese können aber für die Erstellung von OER-Material eingesetzt werden.'><i class="fa fa-question-circle" aria-hidden="true"></i></a> Mediensuche</h3>
-          <p class="explanation" style="line-height:1.1;margin-top:10px;"></small></p>
+      <h3 class="text-center" style="margin-top:75px;">Weitere Seiten</h3>
+      <p><small>Diese Webseiten haben nicht mehr in den Suchschlitz bzw. in die Vorauswahl gepasst, sind aber natürlich dennoch hilfreich und bieten zum Teil ebenfalls offene Bildungsmaterialien an (manchmal jedoch leider noch ohne maschinenlesbare Lizenz).</small></p>
+            <div id="not-compatible-provider-list-box">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row" id="not-compatible-provider-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="row" id="media-search"  style="margin-top:75px;" >
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <h3 name="mediasearch" class="text-center"><a href="#mediasearch"></a> Mediensuche</h3>
+          <p class="explanation" style="line-height:1.1;margin-top:10px;"><small>Auf Plattformen nach offen-lizenzierten Inhalten (Audio, Foto, Video, etc.) auf suchen, die nicht zwangsläufig für das Lehren/Lernen erstellt wurden. Diese können aber für die Erstellung von OER-Material eingesetzt werden.</small></p>
 
           <div class="alert alert-info" role="alert"><small><i class="fa fa-picture-o" aria-hidden="true"></i>
             Neues Angebot für Bilder seit Ende 2019: <a href="https://search.creativecommons.org" target="_blank">search.creativecommons.org</a> (Version 2)</small>
@@ -191,9 +209,25 @@
 </div> <!-- eo media search -->
 
 
-<div id="web-search" class="row" style="margin-top:30px;" >
+<div id="web-search" class="row" style="margin-top:65px;" >
     <div class="col-lg-8 col-md-10 mx-auto">
-            <h3 name="web-search" data-i18n="header-web-search-link"><a href="#websearch" data-toggle="tooltip" data-html="true" title='Das World Wide Web nach Webseiten durchsuchen, die mit einer freien Lizenz markiert wurden. Diese Seiten müssen nicht unbedingt Bildungsmaterial ("educational") sein, eignen sich teilweise also eher als Vorlage für pädagogische Zwecke.'><i class="fa fa-question-circle" aria-hidden="true"></i></a>  Das gesamte Web durchsuchen</h3>
+
+
+            <h3 name="web-search" data-i18n="header-web-search-link" class="text-center mb-3"><a href="#websearch"></a>  Das gesamte Web durchsuchen</h3>
+
+
+
+
+            <p><small>Das gesamte World Wide Web nach Inhalten durchsuchen, die mit einer freien Lizenz markiert wurden. Diese Seiten müssen nicht unbedingt Bildungsmaterial ("educational") sein, eignen sich teilweise also eher als Vorlage für pädagogische Zwecke. </small></p>
+
+            <div class="alert alert-dark" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <small>
+              <i class="fa fa-firefox" aria-hidden="true"></i> Testen: Das Web mit dem Browser-Plugin für <a href="https://addons.mozilla.org/en-US/firefox/addon/oerh%C3%B6rnchen/" target="_blank">Firefox</a> und <a href="https://chrome.google.com/webstore/detail/oerh%C3%B6rnchen/oojclmchomjdmmgjcfgekmbanplfmgel?hl=de" target="_blank">Chrome</a> durchsuchen.</small>
+            </div>
+
                     <div class="card">
                         <div class="card-header">
                             Suchbegriff
@@ -266,21 +300,7 @@
                     </button>
                 </div>
     </div><!-- eo web search -->
-    <div id="not-compatible" class="row not-compatible"  style="margin-top:30px;" >
-        <div class="col-lg-8 col-md-10 mx-auto">
-                <div id="not-compatible-provider-list-box">
-                    <div class="card">
-                        <div class="card-header">
-                            Weitere Seiten
-                        </div>
-                        <div class="card-body">
-                            <div class="row" id="not-compatible-provider-list">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
+
     </div><!-- eo container -->
     <hr>
 
@@ -297,7 +317,7 @@
                 <div class="modal-body">
                     <div class="search-success">
                         <p data-i18n="modal-text-search-success"> Das OERhörnchen hat die Suchanfrage vorbereitet und erweiterte Einstellungen wie die  Lizenzen als URL-Parameter gesetzt, Ergebnisse hier öffnen:</p>
-                        <p style="text-align:center;"><a target="_blank" class="modal-search-url search-success-open-url btn-primary btn" data-i18n="modal-link-text"><i class="fa fa-external-link" aria-hidden="true"></i> Google-Suchergebnisse öffnen</a></p>
+                        <p style="text-align:center;"><a target="_blank" class="modal-search-url search-success-open-url btn-primary btn" data-i18n="modal-link-text"><i class="fa fa-external-link" aria-hidden="true"></i> Google-Ergebnisse öffnen</a></p>
                         <!--<p data-i18n="modal-link-share">Link zum Teilen:</p>
             <div class="input-group">
               <input type="text" class="form-control" id="modal-search-input" title="modal-input"/>
