@@ -347,6 +347,11 @@ badge image from pixabay: https://pixabay.com/de/abzeichen-flair-englisch-sprach
     'image': 'digitale_spielewelten.png'
   },
   {
+    'name':'oer-musik.de: Open Educational Resources zur Musik von Ulrich Kaiser',
+    'url':'oer-musik.de',
+    'image':'oermusik.png'
+  },
+  {
     'name': 'Roberta - Lernen mit Robotern: Materialien',
     'url': 'www.roberta-home.de/lehrkraefte/roberta-materialien/',
     'image': 'roberta.png'
