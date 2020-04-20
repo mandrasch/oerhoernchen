@@ -24,7 +24,7 @@
 
 
       <div class="alert alert-primary" role="alert"><small><i class="fa fa-bullhorn" aria-hidden="true"></i>
-        Offenes Lernangebot ab 16.03.2020: <a href="https://edunauten.de" target="_blank">edunauten.de - zeitgemäße Pädagogik <i class="fa fa-external-link" aria-hidden="true"></i></a></small>
+        Neu: <a href="https://wirlernenonline.de/" target="_blank">wirlernenonline.de - Freie Bildung zum Mitmachen! <i class="fa fa-external-link" aria-hidden="true"></i></a></small>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
