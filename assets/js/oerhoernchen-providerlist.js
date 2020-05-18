@@ -90,6 +90,11 @@ var oer_provider_list = [
     'image': 'edulabs.png'
   },
   {
+    'name':'Knowledge Map - Projekt von Lehrer Horst Engels',
+    'url':'kmap.eu',
+    'image':'kmap.png'
+  },
+  {
     'name': 'Hamburg Open Online University',
     'url': 'hoou.de',
     'image': 'hoou.png'
