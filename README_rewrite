@@ -10,3 +10,5 @@ Part2: https://www.youtube.com/watch?v=iWivBpYmOaQ
 
 1. Create src/includes/base.njk
 2. Copy header and footer html
+
+Tutorial does not include information about subdirectory path prefixes (https://www.11ty.dev/docs/filters/url/), see https://github.com/11ty/eleventy-base-blog/blob/master/_includes/layouts/base.njk as well
