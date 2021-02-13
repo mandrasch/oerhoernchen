@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <!-- TODO: fix tags -->
+  <!-- <meta name="DC.Title" content="<?php echo html($page->title()) ?>" />
+    <meta name="DC.Creator" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Rights" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Publisher" content="<?php echo html($site->author()) ?>" />
+    <meta name="DC.Description" content="<?php echo html($page->description()) ?>"/ >
+    <meta name="DC.Language" content="de_DE" />
+    <meta property="og:title" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo html($site->url()) ?>" /> -->
+
+  <meta property="og:image" content="{{ '/assets/img/squirrel-2781394_1920_pixabay_annawaldl.jpg' | url }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <!-- TODO: fix them -->
+  <!-- <meta itemprop="name" content="<?php echo html($page->title()) ?> | <?php echo html($site->title()) ?>">
+    <meta itemprop="description" content="<?php echo html($page->description()) ?>"> -->
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | url }}" />
+
+  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/font-awesome/css/font-awesome.min.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/clean-blog.min.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/cookieconsent.min.css' | url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/oerhoernchen-search.css' | url }}" />
+
+  <style type="text/css">
+    /* Google Font local replacement */
+    /* lora-regular - latin */
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 400;
+      src: url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.eot');
+      /* IE9 Compat Modes */
+      src: local('Lora Regular'),
+      local('Lora-Regular'),
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-regular.svg#Lora') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* lora-italic - latin */
+    @font-face {
+      font-family: 'Lora';
+      font-style: italic;
+      font-weight: 400;
+      src: url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Lora Italic'),
+      local('Lora-Italic'),
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-italic.svg#Lora') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* lora-700 - latin */
+    @font-face {
+      font-family: 'Lora';
+      font-style: normal;
+      font-weight: 700;
+      src: url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.eot');
+      /* IE9 Compat Modes */
+      src: local('Lora Bold'),
+      local('Lora-Bold'),
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700.svg#Lora') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* lora-700italic - latin */
+    @font-face {
+      font-family: 'Lora';
+      font-style: italic;
+      font-weight: 700;
+      src: url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Lora Bold Italic'),
+      local('Lora-BoldItalic'),
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/lora-v12-latin-700italic.svg#Lora') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-300 - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 300;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Light'),
+      local('OpenSans-Light'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-300italic - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 300;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Light Italic'),
+      local('OpenSans-LightItalic'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-300italic.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-regular - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Regular'),
+      local('OpenSans-Regular'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-italic - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Italic'),
+      local('OpenSans-Italic'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-italic.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-600 - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans SemiBold'),
+      local('OpenSans-SemiBold'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-600italic - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 600;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans SemiBold Italic'),
+      local('OpenSans-SemiBoldItalic'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-600italic.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-700 - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Bold'),
+      local('OpenSans-Bold'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-700italic - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 700;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans Bold Italic'),
+      local('OpenSans-BoldItalic'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-700italic.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-800 - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 800;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans ExtraBold'),
+      local('OpenSans-ExtraBold'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+
+    /* open-sans-800italic - latin */
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 800;
+      src: url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.eot');
+      /* IE9 Compat Modes */
+      src: local('Open Sans ExtraBold Italic'),
+      local('OpenSans-ExtraBoldItalic'),
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.eot?#iefix') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.woff2') format('woff2'),
+      /* Super Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.woff') format('woff'),
+      /* Modern Browsers */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.ttf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('{{ '/assets/' | url }}fonts/open-sans-v15-latin-800italic.svg#OpenSans') format('svg');
+      /* Legacy iOS */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="<?php echo url(); ?>">OERhörnchen</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="/" class="nav-link active">Suche</a></li>
+          <li class="nav-item"><a href="/bildungsteiler" class="nav-link">Bildungsteiler</a></li>
+          <li class="nav-item"><a href="/urlcheck" class="nav-link">URL-Check</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="masthead" style="background-image: url('{{ '/assets/img/squirrel-2781394_1920_pixabay_annawaldl.jpg' | url }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>{{ title }}</h1>
+            <span class="subheading">{{ subheading }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{ content | safe }}
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/oerhoernchen">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://matthias-andrasch.de">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/programmieraffe/oerhoernchen">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">
+            Alle Textinhalte, sofern nicht anders angegeben: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" rel="license" target="_blank">CC0</a><br /><br>
+            Foto: <a href="https://pixabay.com/de/eichh%C3%B6rnchen-f%C3%BCttern-futter-nuss-2781394/">Annawadl (Pixabay/CC0)</a> | Theme: <a href="https://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> (MIT License)</a> | CMS: <a
+              href="https://getkirby.com/" target="_blank">Kirby 2</a> (commercial) <br />
+            <br> Disclaimer: Auf dieser Webseite findet keine Rechtsberatung statt, es wird keine Haftung für Folgen der Nutzung der Werkzeuge der OERhörnchen-Seite übernommen.
+            <br><br><a href="https://matthias-andrasch.eu/blog/impressum-datenschutz/">Impressum & Datenschutz</a> | <a href="https://github.com/programmieraffe/oerhoernchen">Open-Source-Projekt (CC0)</a> | <a href="https://github.com/programmieraffe/oerhoernchen/issues"
+              target="_blank">Fehler melden /Verbesserungsvorschlag einreichen</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    var OERHOERNCHEN_ASSET_IMG_URL = "{{ '/assets/img/' | url }}";
+    var OERHOERNCHEN_ASSET_URL = "{{ '/assets/' | url }}";
+    var OERHOERNCHEN_SITE_URL = "{{ '/' | url }}";
+    // search params
+    var OER_HOERNCHEN_BASE_URL = "{{ ' / ' | url }}";
+  </script>
+
+  <script type="text/javascript" src="{{ '/assets/' | url }}js/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ '/assets/' | url }}js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="{{ '/assets/' | url }}js/clean-blog.min.js"></script>
+  <script type="text/javascript" src="{{ '/assets/' | url }}js/cookieconsent.min.js"></script>
+  <script type="text/javascript" src="{{ '/assets/' | url }}js/oerhoernchen.js"></script>
+  <!-- <script type="text/javascript" src="{{ '/assets/' | url }}js/oerhoernchen.cookieconsent.matomo.js"></script>-->
+  <!-- Search/Suche -->
+  <script type="text/javascript" src="{{ '/assets/js/oerhoernchen-providerlist.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/oerhoernchen-search.js' | url }}"></script>
+  <!-- Bildungsteiler -->
+  <script type="text/javascript" src="{{ '/assets/js/i18n/libs/CLDRPluralRuleParser/src/CLDRPluralRuleParser.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.messagestore.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.fallbacks.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.language.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.parser.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/i18n/js/jquery.i18n.emitter.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/clipboard.min.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/oerhoernchen_cc_icons_svg_base64.js' | url }}"></script>
+  <script type="text/javascript" src="{{ '/assets/js/oerhoernchen-bildungsteiler.js' | url }}"></script>
+
+</body>
+
+</html>
