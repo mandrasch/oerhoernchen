@@ -1,8 +1,23 @@
 {
   "name": "oerhoernchen",
-  "description": "The search tool for Open Educational Resources",
-  "author": "Matthias Andrasch <info@pmatthias-andrasch.de>",
   "version": "1.0.0",
-  "type": "kirby-plugin",
-  "license": "CC0/Public Domain"
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmieraffe/oerhoernchen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmieraffe/oerhoernchen/issues"
+  },
+  "homepage": "https://github.com/programmieraffe/oerhoernchen#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
 }

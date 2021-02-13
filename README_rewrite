@@ -1,0 +1,12 @@
+
+Tutorial Part 1: https://www.youtube.com/watch?v=h6ZxRudaYIQ
+
+1. npm init -y
+2. npm install @11ty/eleventy
+3. Create .eleventy.js
+4. run "npx eleventy --serve"
+
+Part2: https://www.youtube.com/watch?v=iWivBpYmOaQ
+
+1. Create src/includes/base.njk
+2. Copy header and footer html
