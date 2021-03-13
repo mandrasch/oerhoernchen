@@ -100,6 +100,11 @@ var oer_provider_list = [
     'image': 'hoou.png'
   },
   {
+    'name': 'oerbw.de - OER-Portal Baden-Württemberg (Hochschule)',
+    'url': 'oerbw.de',
+    'image': 'oerbwzoerr.png'
+  },
+  {
     'name': 'Wikiversity - Wikimedia Foundation',
     'url': 'de.wikiversity.org',
     'image': 'wikiversity.png'
@@ -133,11 +138,6 @@ var mixed_provider_list = [{
     'name': 'oncampus - offene Online Kurse',
     'url': 'mooin.oncampus.de',
     'image': 'mooin.png'
-  },
-  {
-    'name': 'oerbw.de - OER-Portal Baden-Württemberg (Hochschule)',
-    'url': 'oerbw.de',
-    'image': 'oerbwzoerr.png'
   }
 ];
 
@@ -306,6 +306,11 @@ var media_provider_list = [{
 /* also archive, some pages are compatible, but I have to deal with the 32 word limit on google :-/ ;-) */
 var not_compatible_provider_list = [
   /* unfortunately no machine readable license yet */
+  {
+    'name': 'OER Späti (digLL Hessen)',
+    'url': 'oer.digll-hessen.de/',
+    'image': 'oer_spaeti.png'
+  },
   {
     'name': 'Materialien für Bildung für nachhaltige Entwicklung',
     'url': 'bne-portal.de/de/lehrmaterialien',
