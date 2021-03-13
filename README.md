@@ -9,7 +9,8 @@ Currently working on a rewrite from "kirby2"-plugin to 11ty (static CMS).
 
 ## Installation
 
-1. npm install
-2. npx @11ty/eleventy --serve
+1. `npm install`
+2. Development: `npx @11ty/eleventy --serve`
+3. Build: `npx @11ty/eleventy`
 
 License: CC0 (https://creativecommons.org/publicdomain/zero/1.0/deed.de) by Matthias Andrasch
