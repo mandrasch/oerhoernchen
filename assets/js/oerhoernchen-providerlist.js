@@ -105,6 +105,11 @@ var oer_provider_list = [
     'image': 'oerbwzoerr.png'
   },
   {
+    'name':'twillo - OER-Portal Niedersachsen',
+    'url':'twillo.de',
+    'image':'twillo.png'
+  },
+  {
     'name': 'Wikiversity - Wikimedia Foundation',
     'url': 'de.wikiversity.org',
     'image': 'wikiversity.png'
