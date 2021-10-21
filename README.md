@@ -1,11 +1,11 @@
 # OERhörnchen
-OERhörnchen - search tools for Open Educational Resources (Kirby2-Plugin)
+OERhörnchen - search tools for Open Educational Resources. 
 
-Currently working on a rewrite from "kirby2"-plugin to 11ty (static CMS).
+Rewritten from kirby2-plugin to 11ty (awesome static CMS).
 
 ## TODOs
 
-- URL check (runs on php, change to ajax?)
+- URL check (runs on php, change to ajax/fetch?)
 
 ## Installation
 
