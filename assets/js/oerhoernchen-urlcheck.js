@@ -30,7 +30,7 @@ $(function() {
     $("#urlcheck-results-error").hide();
 
     $.ajax({
-      url: 'https://oerhoern.uber.space/urlcheck-proxy.php',
+      url: 'https://oerhoernchen-urlcheck-proxy.codingbros.eu/urlcheck-proxy.php',
       type: "get",
       data: {'u':u},
       dataType: "json",

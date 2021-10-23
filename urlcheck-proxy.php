@@ -1,20 +1,17 @@
 <?php
 // This file needs to be hosted on a PHP enabled webserver
 
-// Access management
-$origin_url = $_SERVER['HTTP_ORIGIN'] ?? $_SERVER['HTTP_REFERER'];
-$allowed_origins = ['oerhoernchen.de', 'home-5005185615.app-ionos.space', 'home-5005434058.app-ionos.space']; // replace with query for domains.
-$request_host = parse_url($origin_url, PHP_URL_HOST);
-$host_domain = implode('.', array_slice(explode('.', $request_host), -2));
-if (!in_array($host_domain, $allowed_origins, false)) {
-    header('HTTP/1.0 403 Forbidden');
-    die('You are not allowed to access this.');
-}
+// This needs to be set in .htaccess (CORS):
+// # https://gist.github.com/armno/4959387
+// <IfModule mod_headers.c>
+// SetEnvIf Origin "^http(s)?://(.+\.)?(oerhoernchen\.de|app-ionos\.space)$" origin_is=$0
+// Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
+// </IfModule>
 
 // Script
 if (isset($_GET["u"])) {
     $url = $_GET["u"];
-    $url = filter_var($url, FILTER_SANITIZE_URL); // 2DO: more sanitizing needed?
+    $url = filter_var($url, FILTER_SANITIZE_URL); // TODO: more sanitizing needed?
 
     $ch      = curl_init();
     $timeout = 5;
@@ -36,7 +33,6 @@ if (isset($_GET["u"])) {
 
     if ($html !== false) {
         // The * is important!! Otherwise rel=license noopener won't be match
-        // 2DO: put in scrapy as well??
         foreach ($html->find('[rel*="license"]') as $element) {
             $nodes_rel_license[] = array('html' => (string)$element, 'href' => $element->href, 'innertext' => $element->innertext);
         }
@@ -58,6 +54,8 @@ if (isset($_GET["u"])) {
         $node_creator = @$html->find('[property*="cc:attributionName"]', 0)->innertext;
 
         $data = array('success' => true, 'nodes_rel_license' => $nodes_rel_license, 'node_title' => $node_title, 'node_creator' => $node_creator, 'node_attribution_url' => $node_attribution_url);
+
+
 
         // TODO: catch curl errors and show it
 
