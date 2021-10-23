@@ -1,6 +1,8 @@
 <?php
 // This file needs to be hosted on a PHP enabled webserver
 
+require_once 'simple_html_dom.php';
+
 // This needs to be set in .htaccess (CORS):
 // # https://gist.github.com/armno/4959387
 // <IfModule mod_headers.c>
