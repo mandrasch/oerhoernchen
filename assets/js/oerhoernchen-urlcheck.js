@@ -1,28 +1,28 @@
-$(function() {
+$(function () {
 
   var u_param = $_GET('u');
   if (u_param !== null) {
     $("#user-url").val(decodeURIComponent(u_param)); // 2DO: Sanitize?
   }
 
-  $("#urlcheck-button").click(function(e) {
+  $("#urlcheck-button").click(function (e) {
     e.preventDefault();
     startUrlcheck();
   });
 
-  $('#urlcheck').submit(function(e) {
+  $('#urlcheck').submit(function (e) {
     e.preventDefault();
     startUrlcheck();
   });
 
-  var startUrlcheck = function() {
+  var startUrlcheck = function () {
     // URL CHECK TOOL
     // check if this is a real url
     var u = $('#user-url').val();
 
     // set url parameter - beware this is experimental, not for old browsers
     // fallback?
-    history.pushState(null,null,'?u='+encodeURIComponent(u));
+    history.pushState(null, null, '?u=' + encodeURIComponent(u));
 
     $("#ajax-loading").show();
     $("#workLicenseUrl").html();
@@ -30,14 +30,14 @@ $(function() {
     $("#urlcheck-results-error").hide();
 
     $.ajax({
-      url: 'https://oerhoernchen-urlcheck-proxy.codingbros.eu/urlcheck-proxy.php',
+      url: 'https://oerhoernchen-urlcheck-proxy.mandrasch.eu/urlcheck-proxy.php',
       type: "get",
-      data: {'u':u},
+      data: { 'u': u },
       dataType: "json",
-      success: function(data) {
+      success: function (data) {
         console.log('URL check received html', data);
 
-        if(Boolean(data.success) === false){
+        if (Boolean(data.success) === false) {
           console.log("Error in response signalised by server, maybe wrong url");
           $("#urlcheck-results").hide();
           $("#urlcheck-results-error").html('Fehler beim Laden der URL - ist diese korrekt?').show();
@@ -63,12 +63,12 @@ $(function() {
           // right now we just select the first one, but pages can have multiple license
           // 2DO: figure out the special case later
 
-          
+
           var licenseUrl = data.nodes_rel_license[0].href;
           var licenseInnerText = data.nodes_rel_license[0].innertext; // only there if it is a a rel=
           // 2DO: check if empty or any special case
-          console.log('First license information used (match, detected license href)',licenseUrl);
-          $("#workLicenseUrl").html('<a href="'+data.nodes_rel_license[0].href+'">'+data.nodes_rel_license[0].href+'</a>');
+          console.log('First license information used (match, detected license href)', licenseUrl);
+          $("#workLicenseUrl").html('<a href="' + data.nodes_rel_license[0].href + '">' + data.nodes_rel_license[0].href + '</a>');
           $("#workLicense").html(licenseInnerText);
 
           $("#workCreator").html(data.node_creator);
@@ -82,19 +82,19 @@ $(function() {
           // check out, if creative commons choose tool was used or OERhoernchen Bildungsteiler
         }
       },
-      error: function(xhr, status) {
+      error: function (xhr, status) {
         console.log("Error in URL check (xhr,status)", xhr, status);
         // 2DO: put in function
         $("#urlcheck-results").hide();
         $("#urlcheck-results-error").html('Fehler beim Laden der Seite (Ajax-Error)').show();
 
-           $("#ajax-loading").hide();
-       
+        $("#ajax-loading").hide();
+
       },
-      complete: function(xhr, status) {
+      complete: function (xhr, status) {
         //$('#showresults').slideDown('slow')
 
-           $("#ajax-loading").hide();
+        $("#ajax-loading").hide();
       }
     }); /* eo ajax */
 
