@@ -465,6 +465,12 @@ badge image from pixabay: https://pixabay.com/de/abzeichen-flair-englisch-sprach
     'name': 'OER Commons (englischsprachig)',
     'url': 'oercommons.org',
     'image': 'oercommons.png'
-  }
+  },
+  {
+    'name': 'Open Music Academy',
+    'url': 'openmusic.academy/',
+    'image': 'oma.png'
+  },
+  
 
 ]
