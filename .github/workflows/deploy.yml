@@ -33,36 +33,8 @@ jobs:
       # NodeJS
       - name: Install and Build 🔧
         run: |
-          npm install
+          npm ci
           npm run build
-
-      # SFTP synchronization - caused time outs
-      # https://github.com/marketplace/actions/ftp-deploy
-      # - name: 📂 Sync files via SFTP
-      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      #   with:
-      #     server: ngcobalt384.manitu.net
-      #     username: ${{ secrets.SFTP_USER }}
-      #     password: ${{ secrets.SFTP_PASSWORD }}
-      #     protocol: ftps
-      #     port: 21
-      #     # SvelteKit output folder
-      #     local-dir: ./build/
-      #     # sftp user is restricted to domain folder
-      #     # /web/aktuelle-erderhitzung.de/ on Manitu
-      #     server-dir: ./
-
-      # # Create an .env file, https://stackoverflow.com/a/63350136
-      # # used for full url for og:image in meta head tag
-      # - name: 'Create env file'
-      #   run: |
-      #     touch .env
-      #     echo PUBLIC_BASE_URL=/ >> .env
-
-      # - name: Install and Build for rsync 🔧
-      #   run: |
-      #     npm ci
-      #     npm run build
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.2.1
