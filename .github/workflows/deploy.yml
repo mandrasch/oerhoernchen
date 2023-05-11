@@ -69,62 +69,12 @@ jobs:
         with:
           # be careful with --delete option!
           switches: -avzr --delete
-          # TODO: add --delete flag once path is correct
           # build path:
-          path: /build/
+          path: /_site/
           # Something like '/home/sites/site100XXXX5/web/aktuelle-erderhitzung.de/'
-          remote_path: ${{ secrets.SSH_PATH }}
+          remote_path: '${{ secrets.SSH_PATH }}'
           remote_host: ngcobalt384.manitu.net
           remote_user: ${{ secrets.SSH_USER }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       # On Manitu -> SSH rsync user must be owner of /aktuelle-erderhitzung.de/ directory
-
-      # # Create an .env file, https://stackoverflow.com/a/63350136
-      # # used for full url for og:image in meta head tag
-      # - name: 'Create env file'
-      #   run: |
-      #     rm .env
-      #     touch .env
-      #     echo PUBLIC_BASE_URL=https://${{ github.event.repository.owner.name }}.github.io/${{ github.event.repository.name }} >> .env
-
-      # # This build runs with path prefix for github pages
-      # # because it is hosted in a subdirectory path
-      # # Example: https://<USER>.github.io/<REPO-NAME>/
-      # # See: https://kit.svelte.dev/docs/adapter-static#github-pages
-      # - name: Install and Build for Github Pages 🔧
-      #   run: |
-      #     npm ci
-      #     npm run build
-      #   env:
-      #     PATHS_BASE: '/${{ github.event.repository.name }}'
-
-      # - name: Archive production artifacts
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: build-folder
-      #     path: |
-      #       build
-
-      # # https://github.com/JamesIves/github-pages-deploy-action
-      # - name: Deploy to Github Pages 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4
-      #   with:
-      #     branch: gh-pages
-      #     folder: build #the output folder
-
-      # SFTP example
-      # https://github.com/marketplace/actions/ftp-deploy
-
-      # Build again if you need another path prefix
-      # - name: Install and Build for FTP 🔧
-      #   run: |
-      #    npm install
-      #    npm run build
-
-      #- name: 📂 Sync files
-      #  uses: SamKirkland/FTP-Deploy-Action@4.1.0
-      #  with:
-      #    server: ftp.samkirkland.com
-      #    username: myFtpUserName
-      #    password: ${{ secrets.ftp_password }}
