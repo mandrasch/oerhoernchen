@@ -1,0 +1,130 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+    # Sustainability: Don't trigger build for updated README
+    paths-ignore:
+      - '**/README.md'
+# needed for gh pages deploy
+# permissions:
+#   contents: write
+# jobs run in parallel by default
+jobs:
+  # For demo purposes I also deploy to GitHub pages,
+  # since it's a bit more complicated (subdirectory path in URL)
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Setup Node LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # lts
+
+      # Create an .env file, this will be used in svelte.config.js
+      # https://stackoverflow.com/a/63350136,
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo PUBLIC_BASE_URL=/ >> .env
+
+      # NodeJS
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
+
+      # SFTP synchronization - caused time outs
+      # https://github.com/marketplace/actions/ftp-deploy
+      # - name: 📂 Sync files via SFTP
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      #   with:
+      #     server: ngcobalt384.manitu.net
+      #     username: ${{ secrets.SFTP_USER }}
+      #     password: ${{ secrets.SFTP_PASSWORD }}
+      #     protocol: ftps
+      #     port: 21
+      #     # SvelteKit output folder
+      #     local-dir: ./build/
+      #     # sftp user is restricted to domain folder
+      #     # /web/aktuelle-erderhitzung.de/ on Manitu
+      #     server-dir: ./
+
+      # # Create an .env file, https://stackoverflow.com/a/63350136
+      # # used for full url for og:image in meta head tag
+      # - name: 'Create env file'
+      #   run: |
+      #     touch .env
+      #     echo PUBLIC_BASE_URL=/ >> .env
+
+      # - name: Install and Build for rsync 🔧
+      #   run: |
+      #     npm ci
+      #     npm run build
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          # be careful with --delete option!
+          switches: -avzr --delete
+          # TODO: add --delete flag once path is correct
+          # build path:
+          path: /build/
+          # Something like '/home/sites/site100XXXX5/web/aktuelle-erderhitzung.de/'
+          remote_path: ${{ secrets.SSH_PATH }}
+          remote_host: ngcobalt384.manitu.net
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # On Manitu -> SSH rsync user must be owner of /aktuelle-erderhitzung.de/ directory
+
+      # # Create an .env file, https://stackoverflow.com/a/63350136
+      # # used for full url for og:image in meta head tag
+      # - name: 'Create env file'
+      #   run: |
+      #     rm .env
+      #     touch .env
+      #     echo PUBLIC_BASE_URL=https://${{ github.event.repository.owner.name }}.github.io/${{ github.event.repository.name }} >> .env
+
+      # # This build runs with path prefix for github pages
+      # # because it is hosted in a subdirectory path
+      # # Example: https://<USER>.github.io/<REPO-NAME>/
+      # # See: https://kit.svelte.dev/docs/adapter-static#github-pages
+      # - name: Install and Build for Github Pages 🔧
+      #   run: |
+      #     npm ci
+      #     npm run build
+      #   env:
+      #     PATHS_BASE: '/${{ github.event.repository.name }}'
+
+      # - name: Archive production artifacts
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: build-folder
+      #     path: |
+      #       build
+
+      # # https://github.com/JamesIves/github-pages-deploy-action
+      # - name: Deploy to Github Pages 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     branch: gh-pages
+      #     folder: build #the output folder
+
+      # SFTP example
+      # https://github.com/marketplace/actions/ftp-deploy
+
+      # Build again if you need another path prefix
+      # - name: Install and Build for FTP 🔧
+      #   run: |
+      #    npm install
+      #    npm run build
+
+      #- name: 📂 Sync files
+      #  uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      #  with:
+      #    server: ftp.samkirkland.com
+      #    username: myFtpUserName
+      #    password: ${{ secrets.ftp_password }}
